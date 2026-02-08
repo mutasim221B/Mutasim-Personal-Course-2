@@ -26,13 +26,7 @@ website:
         text: "Home"
       - file: syllabus.qmd
         text: "Syllabus"
-      - file: schedule.qmd
-        text: "Schedule"
       - sidebar:activities
-      - file: pp.qmd
-        text: "Practice Problems"
-      - file: assignments.qmd
-        text: "Homeworks"
       - file: project.qmd
         text: "Project"
       - file: R_Resources.qmd

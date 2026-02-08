@@ -1,6 +1,6 @@
 ---
 title: "Introduction to Statistical Modeling"
-subtitle: "University of Kentucky, Spring 2026"
+subtitle: "Case Western Reserve University, Spring 2026"
 format: 
   html:
     embed-resources: true

@@ -24,7 +24,7 @@ knitr::opts_chunk$set(
 ```
 
 
-Here you will find class resources for Unit 03-01: Simple Linear Regression: Discovery & Model, rendered version of this is posted in the [course website](https://mutasim221b.github.io/Mutasim-Personal-Course/) (Class Resources tab). You can also download the .qmd file [here](../activity_templates/03_04-slr-intro-formalization.qmd) and open in R-studio. 
+Here you will find class resources for Unit 03-01: Simple Linear Regression: Discovery & Model, rendered version of this is posted in the [course website](https://mutasim221b.github.io/Mutasim-Personal-Course-2/) (Class Resources tab). You can also download the .qmd file [here](../activity_templates/03_04-slr-intro-formalization.qmd) and open in R-studio. 
 
 
 # Notes
