@@ -63,9 +63,9 @@ Practice problems are essential for your understanding, practice, and exploratio
 
 
 
-# Correlation Coefficient (r)
+# Correlation (r)
 
-We can quantify the **linear** relationship between two quantitative variables using a numerical summary known as **correlation coefficient** (sometimes known as a "correlation" or "Pearson's correlation"). Correlation can range from -1 to 1, where a correlation of 0 indicates that there is *no* linear relationship between the two quantitative variables.
+We can quantify the **linear** relationship between two quantitative variables using a numerical summary known as **correlation** (sometimes known as a "correlation coefficient" or "Pearson's correlation"). Correlation can range from -1 to 1, where a correlation of 0 indicates that there is *no* linear relationship between the two quantitative variables.
 
 ::: {.callout-note}
 A correlation close to zero, $r \approx 0$, does **not** rule out the possibility of a \textbf{nonlinear} relationship between two variables.
