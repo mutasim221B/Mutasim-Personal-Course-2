@@ -59,7 +59,7 @@ Practice problems are essential for your understanding, practice, and exploratio
 ## Handouts & Activities
 
 - Download the [Unit 03-01 handouts](/Resources/Unit03_01_Handout.pdf) from here.
-- Fun [Regression by eye](/Resources/regression-by-eye.ppt) activity!
+
 
 
 
