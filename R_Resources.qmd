@@ -1,0 +1,20 @@
+---
+title: "R and RStudio Resources"
+sidebar: false
+---
+
+## Getting Help
+
+
+- [RStudio cheatsheets](https://posit.co/resources/cheatsheets/)
+- [Markdown (Quarto) basics](https://quarto.org/docs/authoring/markdown-basics.html), and [Quarto/RStudio tutorial](https://quarto.org/docs/get-started/hello/rstudio.html)
+- **Google it!** If you have a question about R, someone else probably asked it. Add **“R tidyverse”** to your search term.  
+  Example: *scatterplot R tidyverse*
+- **Note about ChatGPT for code**: Please avoid using ChatGPT as a first resort for R code. It often suggests overly wordy or unfamiliar approaches. Our goal is for you to understand the code you write; sticking to tools and syntax we use in class will support your learning best.
+- More details will be shared soon as we begin the project.
+
+
+
+
+
+

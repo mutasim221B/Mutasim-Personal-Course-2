@@ -1,0 +1,1314 @@
+---
+title: "Unit 03-01: Simple Linear Regression: Discovery"
+subtitle: "Class Resources"
+format: 
+  html:
+    embed-resources: true
+    toc: true
+---
+
+
+
+```{r setup}
+#| include: false
+knitr::opts_chunk$set(
+  collapse = TRUE, 
+  warning = FALSE,
+  message = FALSE,
+  error = TRUE,
+  fig.height = 2.75, 
+  fig.width = 4.25,
+  fig.env = 'figure',
+  fig.pos = 'h',
+  fig.align = 'center')
+```
+
+
+Here you will find class resources for Unit 03-01: Simple Linear Regression: Discovery, rendered version of this is posted in the [course website](https://mutasim221b.github.io/Mac-STAT-155-Fall-25/) (Class Resources tab). You can also download the .qmd file [here](../activity_templates/03_04-slr-intro-formalization.qmd) and open in R-studio. 
+
+
+# Notes
+
+## Learning goals
+
+By the end of this lesson, you should be able to:
+
+- Visualize and describe the relationship between two **quantitative** variables using a **scatterplot**
+- Describe/identify **weak** / **strong**, and **positive** / **negative** correlation from a point cloud
+- Build intuition for fitting **lines** to quantify the relationship between two quantitative variables
+- Differentiate between a **response** / **outcome variable** and a **predictor** / **explanatory variable**
+- Understand the relation between the **scatterplot** and **correlation coefficient**.
+- Describe the strength and direction of the relationship between two quantitative variables using the correlation coefficient, including interpreting whether an association is weak or strong, and positive or negative.
+- Write a **model formula** for a simple linear regression model with a quantitative predictor.
+- Interpret the **intercept** and **slope** coefficients in a simple linear regression model with a quantitative predictor
+- Compute **expected / predicted / fitted values** and **residuals** from a linear regression model formula
+- Interpret predicted values and residuals in the context of the data
+- Explain the connection between residuals and the **least squares criterion**
+
+
+## Readings and videos
+
+Choose either the reading or the videos (posted on Canvas/Moodle) to go through **before** class. **CP Quiz is due on Thursday, 01/29 at 08:00 am** on these topics.
+
+
+## Practice Problems
+
+Practice problems are essential for your understanding, practice, and exploration. I will post the practice problems for Unit 03 after class (please look for my email!).
+
+
+
+# Resources
+
+## Handouts & Activities
+
+- Download the Unit 03-01 handouts from here.
+- Fun [Regression by eye](/Resources/regression-by-eye.ppt) activity!
+
+
+# Exercises
+
+**Context:** Today we'll explore data from [Capital Bikeshare](https://capitalbikeshare.com/), a company in Washington DC. Our main goal will be to explore daily ridership among registered users, as measured by `riders_registered`. Read in the data below.
+
+```{r}
+# Load packages and import data
+library(readr)
+library(ggplot2)
+library(dplyr)
+
+bikes <- read_csv("https://mac-stat.github.io/data/bikeshare.csv")
+```
+
+## Exercise 1: Get to know the data
+
+Create a new code chunk to look at the first few rows of the data and learn how much data (in terms of cases and variables) we have.
+
+a. What does a case represent?
+b. How many and what kinds of variables do we have?
+c. Thinking about the who, what, when, where, why, and how of this data, which of the 5W's + H seem most relevant to our investigations? Explain your thoughts.
+
+
+
+## Exercise 2: Get to know the outcome/response variable
+
+Let's get acquainted with the `riders_registered` variable.
+
+- Construct an appropriate plot to visualize the distribution of this variable, and compute appropriate numerical summaries.
+- Write a good paragraph interpreting the pclot and numerical summaries.
+
+
+## A little-bit of Live Note Taking!
+
+## Before starting the Exercise, let's do the followings first! 
+
+Most of you should have figured out the followings by now, still let's skim through the followings!
+
+a. First, save this activity in your device as STAT 155 -> activities -> copy-paste 03_04.qmd
+
+b. Click on **Render** button! What happens?
+::: {.callout-tip title="Answers"}
+The html has saved in the same location (folder) where you initially saved the .qmd file! You need to submit .html file like this for the PP!
+:::
+
+c. Now, click on the **+C** at the top right side of RStudio and then choose **R**. What happens?
+
+```{r}
+
+```
+
+::: {.callout-tip title="Answers"}
+It creates code chunks
+:::
+
+
+## Exercise 3: Explore the relationship between ridership and temperature 
+
+We'd like to understand how daily ridership among registered users relates with the temperature that it feels like that day (`temp_feel`).
+
+a. What type of plot would be appropriate to visualize this relationship? Sketch and describe what you expect this plot to look like.
+b. Create an appropriate plot using `ggplot()`. How does the plot compare to what you predicted?
+
+```{r eval = TRUE}
+ggplot(bikes, aes(x = temp_feel, y = riders_registered)) +
+    geom_point()
+```
+
+Type-in the followings in the.qmd file you have been working from the last class!
+
+::: {.callout-tip title="Comments"}
+Trend: Linear (?); Direction/Association: Positive/Negative, Strength: spread of the points (dispersed? close together? moderately close together?); Outlier?
+:::
+
+c. Add the following two lines after your plot to add a linear (blue) and curved (red) smoothing line. What do you notice? Is a simple linear regression model appropriate for this data?
+
+```{r eval=FALSE}
+# Add a red straight line of best fit and a blue curve of best fit
+YOUR_PLOT +
+    geom_smooth(method = "lm", color = "red", se = FALSE) +
+    geom_smooth(color = "blue", se = FALSE)
+```
+
+What do you think "eval = TRUE/FALSE" doing here **{r eval = TRUE/FALSE}**?
+
+```{r eval = TRUE}
+# Add a red straight line of best fit and a blue curve of best fit
+ggplot(bikes, aes(x = temp_feel, y = riders_registered)) +
+    geom_point() +
+    geom_smooth(method = "lm", color = "red", se = FALSE) +
+    geom_smooth(color = "blue", se = FALSE)
+```
+
+**Comments:** If we only displayed the red line of best fit on the plot, we might miss the slight downward trend at the highest temperatures that we can see more clearly with the blue curve of best fit. A linear model is not appropriate if fit to the whole range of the data, but there does seem to be a linear relationship between ridership and temperature below 80 degrees Fahrenheit.
+
+d. Compute Correlation of temp_feel and riders_registered.
+
+### Correlation
+
+We can quantify the **linear** relationship between two quantitative variables using a numerical summary known as **correlation** (sometimes known as a "correlation coefficient" or "Pearson's correlation"). Correlation can range from -1 to 1, where a correlation of 0 indicates that there is *no* linear relationship between the two quantitative variables. 
+
+Below is an example of a "Math Box". You'll see these occasionally throughout the activities. You are *not* required to memorize (if in the quiz, formula will be provided!), anything in the math boxes. If you plan on *continuing* with Statistics courses (or are interested in the math behind everything!), these math boxes are for you!
+
+::: {.callout-note collapse="true"}
+## Correlation
+The Pearson correlation coefficient, $r_{x,y}$, can be written in terms of sums of squares and cross-products as:
+
+$$
+r = \frac{SS_{xy}}{\sqrt{SS_{xx}} \, \sqrt{SS_{yy}}} = \frac{\sum z_x z_y}{n - 1}
+$$
+Where, 
+$$
+SS_{xx} = \sum x^2 - \frac{(\sum x)^2}{n} \newline
+SS_{yy} = \sum y^2 - \frac{(\sum y)^2}{n} \newline
+SS_{xy} = \sum xy - \frac{(\sum x)(\sum y)}{n}
+$$
+
+:::
+
+In general, we will want to be able to describe (qualitatively) two aspects of correlation:
+
+1. Strength
+- Is the correlation between x and y **strong**, or **weak**, i.e. how closely do the points fit around a line? This has to do with how **dispersed** our point clouds are.
+
+2. Direction
+- Is the correlation between x and y **positive** or **negative**, i.e. does y go "up" when x goes "up" (positive), or does y go "down" when x goes "up" (negative)?
+
+Stronger correlations will be *further* from 0 (closer to -1 or 1), and *positive* and *negative* correlations will have the appropriate respective sign (above or below zero).
+
+
+
+
+
+
+
+
+
+
+
+```{r}
+# correlation
+
+# Note: the order in which you put your two quantitative variables into the cor
+# function doesn't matter! Try switching them around to confirm this for yourself
+bikes %>%
+    summarize(cor(temp_feel, riders_registered))
+```
+
+
+## See class-notes: SLR Formalization
+
+
+## Exercise 4: Filtering our data
+
+The relationship between registered riders and temperature looks linear below 80 degrees. We can use the `filter()` function from the `dplyr` package to subset our cases. (We'll learn techniques soon for handling this nonlinear relationship.)
+
+If we wanted to only keep cases where registered ridership was greater than 2000, we would use the following code:
+
+```{r eval=FALSE}
+# The %>% is called a "pipe" and feeds what comes before it
+# into what comes after (bikes data is "fed into" the filter() function)
+NEW_DATASET_NAME <- bikes %>% 
+    filter(riders_registered > 2000)
+```
+
+Adapt the example above to create a new dataset called `bikes_sub` that only keeps cases where the felt temperature is less than 80 degrees.
+
+```{r eval = TRUE}
+# The %>% is called a "pipe" and feeds what comes before it
+# into what comes after (bikes data is "fed into" the filter() function)
+bikes_sub <- bikes %>% 
+    filter(temp_feel < 80)
+```
+
+Did it work? Check the dimensions of bikes and bikes_sub!
+
+## Exercise 5: Model fitting and coefficient interpretation 
+
+Let's fit a simple linear regression model and examine the results. Step through code chunk slowly, and make note of new code.
+
+```{r}
+# Construct and save the model as bike_mod
+# What's the purpose of "riders_registered ~ temp_feel"?
+# What's the purpose of "data = bikes_sub"?
+bike_mod <- lm(riders_registered ~ temp_feel, data = bikes_sub)
+```
+
+```{r}
+# A long summary of the model stored in bike_mod
+summary(bike_mod)
+```
+
+```{r}
+# A simplified model summary
+coef(summary(bike_mod))
+```
+
+a. Using the model summary output, complete the following model formula:    
+    E[riders_registered | temp_feel] = ___ + ___ * temp_feel
+
+b. **Intercept interpretation:** On days that feel like 0 degrees Fahrenheit, we can expect an average of -2486.41180 riders---a negative number of riders doesn't make sense! This results because of **extrapolation**---0 degrees is so far below the minimum temperature in the data. We only have information on the relationship between ridership and temperature in the ~40-100 degree range and have no idea what that relationship looks like outside that range.
+
+c. **Slope interpretation:** Every 1 degree **increase** in feeling temperature is associated with an **average** of about 86 **more** riders.
+
+
+## Exercise 6: Predictions and residuals 
+
+On August 17, 2012, the `temp_feel` was 53.816 degrees and there were 5665 riders. We can get data for this day using the `filter()` and `select()` `dplyr` functions. Note, but don't worry about the syntax -- we haven't learned this yet:
+    
+```{r}
+bikes_sub %>% 
+    filter(date == "2012-08-17") %>% 
+    select(riders_registered, temp_feel) 
+```
+
+a. Peak back at the scatterplot. *More* riders than expected -- the point is far above the trend line.
+
+```{r eval = TRUE}
+ggplot(bikes_sub, aes(x = temp_feel, y = riders_registered)) +
+    geom_point() +
+    geom_smooth(method = "lm", color = "red", se = FALSE) 
+```
+
+b. Use your model formula from the previous exercise to *predict* the ridership on August 17, 2012 from the temperature on that day. (That is, where do days with this temperature fall on the model trend line? How many registered riders would we *expect* on a 53.816 degree day?)
+
+::: {.callout-tip title="Answer"}
+**-2486.41180 + 86.49251 * 53.816 = 2168.269**
+:::
+
+
+c. Check your part b calculation using the `predict()` function. Take careful note of the syntax -- there's a lot going on!
+
+```{r}
+# What is the purpose of newdata = ___???
+predict(bike_mod, newdata = data.frame(temp_feel = 53.816))
+```
+
+d. Calculate the **residual** or **prediction error**. How far does the *observed* ridership fall from the *model prediction*?    
+
+::: {.callout-tip title="Answer"}
+residual = observed y - predicted y = 5665 - 2168.269 = 3496.731
+:::
+    
+
+e. Are positive residuals above or below the trend line? When we have positive residuals, does the model over- or under-estimate ridership? Repeat these questions for negative residuals.
+
+::: {.callout-tip title="Answer"}
+- Positive residuals are above the trend line---we under-estimate ridership.
+- Negative residuals are below the trend line---we over-estimate ridership.
+:::
+
+f. For an 85 degree day, how many registered riders would we expect? Do you think it's a good idea to make this prediction? (Revisit the visualization and filtering we did in Exercises 3 and 4.) [Complete after the class!]
+
+
+
+## Exercise 7: Changing temperature units (CHALLENGE) [Complete after the class!]
+
+Suppose we had measured temperature in degrees Celsius rather than degrees Fahrenheit. How do you think our intercept and slope estimates, and their coefficient interpretations, would change?
+
+
+
+
+## Render your work Again (this is a good practice to render often- to see which part of the paragraph might cause non-rendering, if applicable!) [Complete after the class!]
+
+- Click the "Render" button in the menu bar for this pane (blue arrow pointing right). This will create an HTML file containing all of the directions, code, and responses from this activity. A preview of the HTML will appear in the browser.
+- Scroll through and inspect the document to check that your work translated to the HTML format correctly.
+- Close the browser tab.
+- Go to the "Background Jobs" pane in RStudio and click the Stop button to end the rendering process.
+- Navigate to your "Activities" subfolder within your "STAT155" folder and locate the HTML file. You can open it again in your browser to double check.
+
+
+
+# Additional Practice [Complete after class]
+
+## Exercise 8: Ridership and windspeed
+
+Let's pull together everything that you've practiced in the preceding exercises to investigate the relationship between `riders_registered` and `windspeed`. Go back to using the `bikes` dataset (instead of `bikes_sub`) because we no longer need to only keep days less than 80 degrees.
+    
+```{r}
+# Construct and interpret a visualization of this relationship
+# Include a representation of the relationship trend
+
+
+# Use lm to construct a model of riders_registered vs windspeed
+# Save this as bike_mod2
+
+
+# Get a short summary of this model
+
+```
+
+a. Summarize your observations from the visualizations.
+b. Write out a formula for the model trend.
+c. Interpret both the intercept and the windspeed coefficient. (Note: What does a negative slope indicate?)
+d. Use this model to predict the ridership on August 17, 2012 and calculate the corresponding residual. (Note: You’ll first need to find the windspeed on this date!)
+
+
+## Exercise 9: Data drills (`filter`, `select`, `summarize`) [Complete after class]
+
+This exercise is designed to help you keep building your `dplyr` skills. These skills are important to data cleaning and digging, which in turn is important to really making meaning of our data. We'll work with a simpler set of 10 data points:
+
+```{r}
+new_bikes <- bikes %>% 
+    select(date, temp_feel, humidity, riders_registered, day_of_week) %>% 
+    head(10)
+```
+
+### Verb 1: `summarize`
+
+Thus far, in the `dplyr` grammar you've seen 3 **verbs** or action words: `summarize()`, `select()`, `filter()`. Try out the following code and then summarize the point of the `summarize()` function:
+    
+```{r}
+new_bikes %>% 
+    summarize(mean(temp_feel), mean(humidity))
+```
+    
+
+### Verb 2: `select`
+
+Try out the following code and then summarize the point of the `select()` function:
+
+```{r}
+new_bikes %>%
+    select(date, temp_feel)
+```
+
+```{r}
+new_bikes %>% 
+    select(-date, -temp_feel)
+```
+
+### Verb 3: `filter`
+
+Try out the following code and then summarize the point of the `filter()` function:
+
+```{r}
+new_bikes %>% 
+    filter(riders_registered > 850)
+```
+
+```{r}
+new_bikes %>% 
+    filter(day_of_week == "Sat")
+```
+
+```{r}
+new_bikes %>% 
+    filter(riders_registered > 850, day_of_week == "Sat")
+```
+
+## Exercise 10: Your turn [Complete after the class!]
+
+Use `dplyr` verbs to complete each task below.
+   
+```{r}
+# Keep only information about the humidity and day of week
+
+# Keep only information about the humidity and day of week using a different approach
+
+# Keep only information for Sundays
+
+# Keep only information for Sundays with temperatures below 50
+
+# Calculate the maximum and minimum temperatures
+
+```
+
+
+
+# Additional Exercises [If no time in-class, complete aftr class]
+
+**Context:** We'll explore data from a weighlifting competition. The data originally came from [Kaggle](https://www.kaggle.com/open-powerlifting/powerlifting-database) and [OpenPowerlifting](https://www.openpowerlifting.org/). Our main goal will be to explore the relationship between strength-to-weight ratio (SWR) and body weight. Read in the data below.
+
+```{r}
+# Load packages and import data
+library(readr)
+library(ggplot2)
+library(dplyr)
+
+lifts <- read_csv("https://mac-stat.github.io/data/powerlifting.csv")
+```
+
+## Exercise 1: Get to know the data
+
+a. Create a new code chunk by clicking the green "C" button with a green + sign in the top right of the menu bar. In this code chunk, use an appropriate function to look at the first few rows of the data.
+
+
+b. Create a new code chunk, and use an appropriate function to learn how much data we have (in terms of cases and variables). 
+
+
+c. What does a case represent?
+
+
+d. Navigate to the [FAQ page](https://www.openpowerlifting.org/faq) and read the response to the "How does this site work? Do you just download results from the federations?" question. What do you learn about data quality and completeness from this response?
+
+
+## Exercise 2: Mutating our data 
+
+Strength-to-weight ratio (SWR) is defined as `TotalKg`/`BodyweightKg`. We can use the `mutate()` function from the `dplyr` package to create a new variable in our dataframe for `SWR` using the following code:
+
+```{r}
+# The %>% is called a "pipe" and feeds what comes before it
+# into what comes after (lifts data is "fed into" the mutate() function).
+# When creating a new variable, we often reassign the data frame to itself,
+# which updates the existing columns in lifts with the additional "new" column(s)
+# in lifts!
+lifts <- lifts %>% 
+    mutate(NEW_VARIABLE_NAME = Age/BestSquatKg)
+```
+
+Adapt the example above to create a new variable called `SWR`, where SWR is defined as `TotalKg`/`BodyweightKg`.
+
+```{r eval = TRUE}
+lifts <- lifts %>% 
+    mutate(SWR = TotalKg / BodyweightKg)
+```
+
+## Exercise 3: Get to know the outcome/response variable 
+
+Let's get acquainted with the `SWR` variable.
+
+- Construct an appropriate plot to visualize the distribution of this variable, and compute appropriate numerical summaries.
+- Write a good paragraph interpreting the plot and numerical summaries.
+
+
+## Exercise 4: Data visualization - two quantitative variables 
+
+We'd like to visualize the relationship between body weight and the strength-to-weight ratio. A **scatterplot** (or informally, a "point cloud") allows us to do this! The code below creates a scatterplot of body weight vs. SWR using `ggplot()`.
+
+```{r}
+# scatterplot
+
+# The alpha = 0.5 in geom_point() adds transparency to the points
+# to make them easier to see. You can make this smaller for more transparency
+lifts %>%
+  ggplot(aes(x = BodyweightKg, y = SWR)) +
+  geom_point(alpha = 0.5)
+```
+
+
+a. This is your second (!) **bivariate** data visualization (visualization for two variables)! What differences do you notice in the code structure when creating a bivariate visualization, compared to univariate visualizations we've worked with before? 
+
+b. What similarities do you notice in the code structure?
+
+c. Does there appear to be some sort of **pattern** in the structure of the point cloud? Describe it, in no more than three sentences! Comment on the direction of the relationship between the two variables (positive? negative?) and the spread of the points (are they dispersed? close together?).
+
+
+## Exercise 5: Scatterplots - patterns in point clouds
+
+Sometimes, it can be easier to see a pattern in a point cloud by adding a **smoothing** line to our scatterplots. The code below adapts the code in Exercise 4 to do this: 
+
+```{r}
+# scatterplot with smoothing line
+lifts %>%
+  ggplot(aes(x = BodyweightKg, y = SWR)) +
+  geom_point(alpha = 0.5) +
+  geom_smooth()
+```
+
+a. Look back at your answer to Exercise 4 (c). Does the smoothing line assist you in seeing a pattern, or change your answer at all? Why or why not?
+b. Based on the scatterplot with the smoothing line added above, does there appear to be a **linear** relationship between body weight and SWR (i.e. would a straight line do a decent job at summarizing the relationship between these two variables)? Why or why not?
+
+## Exercise 6: Correlation
+
+We can quantify the **linear** relationship between two quantitative variables using a numerical summary known as **correlation** (sometimes known as a "correlation coefficient" or "Pearson's correlation"). Correlation can range from -1 to 1, where a correlation of 0 indicates that there is *no* linear relationship between the two quantitative variables. 
+
+Below is an example of a "Math Box". You'll see these occasionally throughout the activities. You are *not* required to memorize, nor will you be assessed on, anything in the math boxes. If you plan on *continuing* with Statistics courses at Macalester (or are interested in the math behind everything!), these math boxes are for you!
+
+::: {.callout-note collapse="true"}
+## Correlation
+
+The Pearson correlation coefficient, $r_{x, y}$, of $x$ and $y$ is the (almost) **average** of products of the z-scores of variables $x$ and $y$:
+
+$$
+r_{x, y} = \frac{\sum z_x z_y}{n - 1}
+$$
+:::
+
+In general, we will want to be able to describe (qualitatively) two aspects of correlation:
+
+1. Strength
+- Is the correlation between x and y **strong**, or **weak**, i.e. how closely do the points fit around a line? This has to do with how **dispersed** our point clouds are.
+
+2. Direction
+- Is the correlation between x and y **positive** or **negative**, i.e. does y go "up" when x goes "up" (positive), or does y go "down" when x goes "up" (negative)?
+
+Stronger correlations will be *further* from 0 (closer to -1 or 1), and *positive* and *negative* correlations will have the appropriate respective sign (above or below zero).
+
+
+a. Rather than a smooth trend line, we can force the line we add to our scatterplots to be linear using `geom_smooth(method = 'lm')`, as below:
+
+```{r}
+# scatterplot with linear trend line
+lifts %>%
+  ggplot(aes(x = BodyweightKg, y = SWR)) +
+  geom_point(alpha = 0.5) +
+  geom_smooth(method = "lm")
+```
+
+b. Based on the above scatterplot, how would you describe the correlation between body weight and SWR, in terms of strength and direction?
+c. Make a guess as to what *numerical value* the correlation between body weight and SWR will have, based on your response to part (b).
+
+## Exercise 7: Computing correlation in R
+
+We can compute the correlation between body weight and SWR using `summarize` and `cor` functions:
+
+```{r}
+# correlation
+
+# Note: the order in which you put your two quantitative variables into the cor
+# function doesn't matter! Try switching them around to confirm this for yourself
+# Because of the missing data, we need to include the use = "complete.obs" - otherwise the correlation would be computed as NA
+lifts %>%
+    summarize(cor(SWR, BodyweightKg, use = "complete.obs"))
+```
+
+Is the computed correlation close to what you guessed in Exercise 6 part (c)?
+
+
+## Exercise 8: Limitations of correlation
+
+We previously noted that correlation was a numerical summary of the **linear** relationship between two variables. We'll now go through some examples of relationships between quantitative variables to demonstrate why it is *incredibly* important to visualize our data *in addition to* just computing numerical summaries!
+
+For this exercise, we'll be working with the `anscombe` dataset, which is built in to R. To load this dataset into our environment, we run the following code:
+
+```{r}
+# load anscombe data
+data("anscombe")
+```
+
+The `anscombe` dataset contains four different pairs of quantitative variables:
+
+- `x1`, `y1`
+- `x2`, `y2`
+- `x3`, `y3`
+- `x4`, `y4`
+
+Adapt the code we used in Exercise 7 to compute the correlation between each of these four pairs of variables, below:
+
+```{r}
+# correlation between x1, y1
+
+# correlation between x2, y2
+
+# correlation between x3, y3
+
+# correlation between x4, y4
+
+```
+
+a. What do you notice about each of these correlations (if the answer to this isn't obvious, double-check your code)? 
+b. Describe these correlations in terms of strength and direction, using only the numerical summary to assist you in your description.
+c. Draw an example on the white board or at your tables of what you **think** the point clouds for these pairs of variables might look like. There are only 11 observations, so you can draw all 11 points if you'd like!
+
+d. Adapt the code for scatterplots given previously in this activity to make *four* distinct scatterplots for each pair of quantitative variables in the `anscombe` dataset. You do not need to add a smooth trend line or a linear trend line to these plots.
+
+```{r}
+# scatterplot: x1, y1
+
+# scatterplot: x2, y2
+
+# scatterplot: x3, y3
+
+# scatterplot: x4, y4
+
+```
+
+e. Based on the correlations you calculated and scatterplots you made, what is the *message* of this last exercise as it relates to the limits of correlation?
+
+## Reflection
+
+Much of statistics is about making (hopefully) reasonable assumptions in attempt to summarize observed relationships in data. Today we started considering assumptions of *linear* relationships between quantitative variables.
+
+Review the learning objectives at the top of this file and today's activity. How do you imagine assumptions of linearity might be useful in terms of quantifying relationships between quantitative variables? How do you imagine these assumptions could sometimes fall short, or even be unethical in certain cases?
+
+> **Response:** Put your response here.
+
+
+
+# Discovery - Intuition for **Least Squares**
+
+## Exercise 9: Lines of best fit
+
+In this activity, we've learned how to fit straight lines to data, to help us visualize the relationship between two quantitative variables. So far, `ggplot` has chosen the line for us. How does it know which line is "best", and what does "best" even mean?
+
+For this exercise, we'll consider the relationship between `x1` and `y1` in the `anscombe` dataset. Run the following code, which creates a scatterplot with a fitted line to our data using the function `geom_abline`:
+
+```{r}
+# scatterplot with a fitted line, whose slope is 0.4 and intercept is 3
+anscombe %>%
+  ggplot(aes(x = x1, y = y1)) +
+  geom_point() +
+  geom_abline(slope = 0.4, intercept = 3, col = "blue", size = 1)
+```
+Describe the line that you see. Do you think the line is "good"? What are you using to define "good"?
+
+Some things to think about:
+
+- How many points are **above** the line?
+- How many points are **below** the line?
+- Are the **distances** of the points above and below the line roughly similar, or is there meaningful difference?
+
+Now we'll add *another* line to our plot. Which line do you think is *better* suited for this data? Why? Be specific!
+
+```{r}
+# scatterplot with a fitted line, whose slope is 0.4 and intercept is 3
+anscombe %>%
+  ggplot(aes(x = x1, y = y1)) +
+  geom_point() +
+  geom_abline(slope = 0.4, intercept = 3, col = "blue", size = 1) +
+  geom_abline(slope = 0.5, intercept = 4, col = "orange", size = 1)
+```
+It's usually quite simple to note when a line is *bad*, but more difficult to quantify when a line is a *good* fit for our data. Consider the following line:
+
+```{r}
+# scatterplot with a fitted line, whose slope is 0.4 and intercept is 3
+anscombe %>%
+  ggplot(aes(x = x1, y = y1)) +
+  geom_point() +
+  geom_abline(slope = -0.5, intercept = 10, col = "red", size = 1) 
+```
+In the next activity, we'll formalize the **principle of least squares**, which will give us one particular definition of a *line of best fit* that is commonly used in statistics! We'll take advantage of the vertical distances between each point and the fitted line (**residuals**), which will help us define (mathematically) a line that best fits our data:
+
+```{r}
+library(broom)
+anscombe %>%
+  lm(y1 ~ x1, data = .) %>%
+  augment() %>%
+  ggplot(aes(x = x1, y = y1)) +
+  geom_smooth(method = "lm", se = FALSE) +
+  geom_segment(aes(xend = x1, yend = .fitted), col = "red") +
+  geom_point()
+```
+
+
+
+# Additional Practice 
+
+## Exercise 10: Correlation and **extreme** values
+
+In this exercise, we'll explore how correlation changes with the addition of **extreme** values, or observations. We'll begin by generating a *toy* dataset called `dat` with two quantitative variables, `x` and `y`. Run the code below to create the dataset. 
+
+**while not required, recall that you can look up function documentation in R using the `?` in front of a function name to figure out what that function is doing!**
+
+```{r}
+# create a toy dataset
+set.seed(1234)
+x <- rnorm(100, mean = 5, sd = 2)
+y <- -3 * x + rnorm(100, sd = 4)
+dat <- data.frame(x = x, y = y)
+```
+
+a. Make a scatterplot of `x` vs. `y`.
+
+```{r}
+# scatterplot
+
+```
+
+b. Based on your scatterplot, describe the correlation between `x` and `y` in terms of strength and direction.
+c. Guess the correlation (the numerical value) between `x` and `y`.
+d. Compute the correlation between `x` and `y`. Was your guess from part (c) close?
+
+```{r}
+# correlation
+
+```
+
+e. Suppose we observe an additional observation with `x = 15` and `y = -45`. We can create a new data frame, `dat_new1`, that contains this observation in addition to the original ones as follows:
+
+```{r}
+# creating dat_new1
+x1 <- c(x, 15)
+y1 <- c(y, -45)
+dat_new1 <- data.frame(x = x1, y = y1)
+```
+
+f. Make a scatterplot of `x` vs. `y` for this new data frame, and compute the correlation between `x` and `y`. Did your correlation change very much with the addition of this observation? Hypothesize why or why not.
+
+```{r}
+# scatterplot
+
+# correlation
+```
+
+g. Suppose instead of our additional observation having values `x = 15` and `y = -45`, we instead observe `x = 15` and `y = -15`. We can create a new data frame, `dat_new2`, that contains this observation in addition to the original ones as follows:
+
+```{r}
+# creating dat_new1
+x2 <- c(x, 15)
+y2 <- c(y, 45)
+dat_new2 <- data.frame(x = x2, y = y2)
+```
+
+h. Make a scatterplot of `x` vs. `y` for this new data frame, and compute the correlation between `x` and `y`. Did your correlation change very much with the addition of *this* observation? Hypothesize why or why not.
+
+```{r}
+# scatterplot
+
+# correlation
+```
+
+i. What do you think the takeaway message is of this exercise? 
+
+j. **Challenge** Add linear trend lines to your scatterplots from parts (f) and (h). Does this give you any additional insight into why the correlations may have changed in different ways with the addition of a new observation?
+
+
+
+# Solutions
+
+```{r eval = TRUE, echo = FALSE}
+# Load packages and import data
+library(readr)
+library(ggplot2)
+library(dplyr)
+
+bikes <- read_csv("https://mac-stat.github.io/data/bikeshare.csv")
+```
+
+## Exercise 1: Get to know the data
+
+```{r eval = TRUE}
+dim(bikes)
+
+head(bikes)
+```
+
+a. A case represents a day of the year.
+b. We have 15 variables broadly concerning weather, day of week information, whether the day is a holiday.
+c. Lots of answers are reasonable here! When and where seem to be particularly relevant because this is for a rideshare based in Washington DC with data from 2011-2012. Ridership likely changes a lot from city to city and over time.
+
+
+
+## Exercise 2: Get to know the outcome/response variable
+
+The distribution of the `riders_registered` variable looks fairly symmetric. On average there are about 3600 registered riders per day (mean = 3656, median = 3662). On any given day, the number of registered riders is about 1560 from the mean. There seem to be a small number of low outliers (minimum ridership was 20).
+
+```{r eval = TRUE}
+ggplot(bikes, aes(x = riders_registered)) +
+    geom_histogram()
+
+ggplot(bikes, aes(y = riders_registered)) +
+    geom_boxplot()
+
+summary(bikes$riders_registered)
+
+bikes %>% 
+    summarize(sd(riders_registered))
+```
+
+
+
+
+## Exercise 3: Explore the relationship between ridership and temperature
+
+We'd like to understand how daily ridership among registered users relates with the temperature that it feels like that day (`temp_feel`).
+
+a. Scatterplot (outcome and predictor are both quantitative)
+b.
+
+```{r eval = TRUE}
+ggplot(bikes, aes(x = temp_feel, y = riders_registered)) +
+    geom_point()
+```
+
+c. If we only displayed the red line of best fit on the plot, we might miss the slight downward trend at the highest temperatures that we can see more clearly with the blue curve of best fit. A linear model is not appropriate if fit to the whole range of the data, but there does seem to be a linear relationship between ridership and temperature below 80 degrees Fahrenheit.
+
+```{r eval = TRUE}
+# Add a red straight line of best fit and a blue curve of best fit
+ggplot(bikes, aes(x = temp_feel, y = riders_registered)) +
+    geom_point() +
+    geom_smooth(method = "lm", color = "red", se = FALSE) +
+    geom_smooth(color = "blue", se = FALSE)
+```
+
+
+
+## Exercise 4: Filtering our data
+
+```{r eval = TRUE}
+# The %>% is called a "pipe" and feeds what comes before it
+# into what comes after (bikes data is "fed into" the filter() function)
+bikes_sub <- bikes %>% 
+    filter(temp_feel < 80)
+```
+
+
+
+## Exercise 5: Model fitting and coefficient interpretation
+
+Let's fit a simple linear regression model and examine the results. Step through code chunk slowly, and make note of new code.
+
+```{r eval = TRUE}
+# Construct and save the model as bike_mod
+# What's the purpose of "riders_registered ~ temp_feel"?
+# What's the purpose of "data = bikes_sub"?
+bike_mod <- lm(riders_registered ~ temp_feel, data = bikes_sub)
+```
+
+```{r eval = TRUE}
+# A long summary of the model stored in bike_mod
+summary(bike_mod)
+```
+
+```{r eval = TRUE}
+# A simplified model summary
+coef(summary(bike_mod))
+```
+
+a. E[riders_registered | temp_feel] = -2486.41180 + 86.49251 * temp_feel
+
+b. **Intercept interpretation:** On days that feel like 0 degrees Fahrenheit, we can expect an average of -2486.41180 riders---a negative number of riders doesn't make sense! This results because of **extrapolation**---0 degrees is so far below the minimum temperature in the data. We only have information on the relationship between ridership and temperature in the ~40-100 degree range and have no idea what that relationship looks like outside that range.
+
+c. **Slope interpretation:** Every 1 degree increase in feeling temperature is associated with an average of about 86 more riders.
+
+
+
+## Exercise 6: Predictions and residuals
+
+On August 17, 2012, the `temp_feel` was 53.816 degrees and there were 5665 riders. We can get data for this day using the `filter()` and `select()` `dplyr` functions. Note, but don't worry about the syntax -- we haven't learned this yet:
+    
+```{r eval = TRUE}
+bikes_sub %>% 
+    filter(date == "2012-08-17") %>% 
+    select(riders_registered, temp_feel) 
+```
+
+a. *More* riders than expected -- the point is far above the trend line
+
+b. -2486.41180 + 86.49251 * 53.816 = 2168.269
+
+c. We get the same result with `predict()`:
+
+```{r eval = TRUE}
+# What is the purpose of newdata = ___???
+predict(bike_mod, newdata = data.frame(temp_feel = 53.816))
+```
+
+d. residual = 5665 - 2168.269 = 3496.731. On August 17, 2012, there were 3496.731 more riders than would be expected from our model.
+
+e. 
+    - Positive residuals are above the trend line---we under-estimate ridership.
+    - Negative residuals are below the trend line---we over-estimate ridership.
+
+f. On an 85 degree day, we would predict 4865.452 riders. Even though we can compute this prediction, it's not a good idea because of extrapolation--the data that we used to fit our model was filtered to days less than 80 degrees.
+
+```{r eval = TRUE}
+-2486.41180 + 86.49251 * 85
+predict(bike_mod, newdata = data.frame(temp_feel = 85))
+```
+
+
+
+
+## Exercise 7: Changing temperature units (CHALLENGE)
+
+If we had measured temperature in degrees Celsius rather than degrees Fahrenheit, both the intercept and slope should change. The intercept would now represent 0 degrees Celsius (32 degrees Fahrenheit) and a one unit change in temperature is now 1 degree Celsius (1.8 degrees Fahrenheit).
+
+
+
+## Exercise 8: Ridership and windspeed
+
+Let's pull together everything that you've practiced in the preceding exercises to investigate the relationship between `riders_registered` and `windspeed`. Go back to using the `bikes` dataset (instead of `bikes_sub`) because we no longer need to only keep days less than 80 degrees.
+    
+```{r eval = TRUE}
+# Construct and interpret a visualization of this relationship
+# Include a representation of the relationship trend
+ggplot(bikes, aes(x = windspeed, y = riders_registered)) + 
+    geom_point() + 
+    geom_smooth(method = "lm", color = "red", se = FALSE) +
+    geom_smooth(color = "blue", se = FALSE)
+
+# Use lm to construct a model of riders_registered vs windspeed
+# Save this as bike_mod2
+bike_mod2 <- lm(riders_registered ~ windspeed, data = bikes)
+
+# Get a short summary of this model
+coef(summary(bike_mod2))
+```
+
+a. There’s a weak, negative relationship – ridership tends to be smaller on windier days.
+
+b. E[riders_registered | windspeed] = 4490.09761 - 65.34145 windspeed
+
+c.
+    - **Intercept:** On days with no wind, we’d expect around 4490 riders. (0 is a little below the minimum of the observed data, but not by much! So extrapolation in interpreting the intercept isn't a huge concern.)
+    - **Slope:** Every 1mph increase in windspeed is associated with a ridership decrease of 65 riders on average.
+
+d. See the code below to predict ridership on August 17, 2012 and calculate the corresponding residual. Note that this residual is smaller than the residual from the temperature model (that residual was 3496.731). This indicates that August 17 was more of an outlier in ridership given the temperature than the windspeed.
+
+```{r eval = TRUE}
+bikes %>% 
+    filter(date == "2012-08-17") %>% 
+    select(riders_registered, windspeed)
+
+# prediction
+4490.09761 - 65.34145 * 15.50072
+
+# residual 
+5665 - 3477.258
+```
+
+
+## Exercise 9: Data drills (`filter`, `select`, `summarize`)
+
+This exercise is designed to help you keep building your `dplyr` skills. These skills are important to data cleaning and digging, which in turn is important to really making meaning of our data. We'll work with a simpler set of 10 data points:
+
+```{r eval = TRUE}
+new_bikes <- bikes %>% 
+    select(date, temp_feel, humidity, riders_registered, day_of_week) %>% 
+    head(10)
+```
+
+### Verb 1: `summarize`
+
+`summarize()` calculates numerical summaries of variables (columns).
+    
+```{r eval = TRUE}
+new_bikes %>% 
+    summarize(mean(temp_feel), mean(humidity))
+```
+    
+
+### Verb 2: `select`
+
+`select()` selects variables (columns).
+
+```{r eval = TRUE}
+new_bikes %>%
+    select(date, temp_feel)
+```
+
+```{r eval = TRUE}
+new_bikes %>% 
+    select(-date, -temp_feel)
+```
+
+### Verb 3: `filter`
+
+`filter()` keeps only days (rows) that meet the given condition(s).
+
+```{r eval = TRUE}
+new_bikes %>% 
+    filter(riders_registered > 850)
+```
+
+```{r eval = TRUE}
+new_bikes %>% 
+    filter(day_of_week == "Sat")
+```
+
+```{r eval = TRUE}
+new_bikes %>% 
+    filter(riders_registered > 850, day_of_week == "Sat")
+```
+
+## Exercise 10: Your turn
+
+Use `dplyr` verbs to complete each task below.
+   
+```{r eval = TRUE}
+# Keep only information about the humidity and day of week
+new_bikes %>% 
+    select(humidity, day_of_week)
+
+# Keep only information about the humidity and day of week using a different approach
+new_bikes %>% 
+    select(-date, -temp_feel, -riders_registered)
+
+# Keep only information for Sundays
+new_bikes %>% 
+    filter(day_of_week == "Sun")
+
+# Keep only information for Sundays with temperatures below 50
+new_bikes %>% 
+    filter(day_of_week == "Sun", temp_feel < 50)
+
+# Calculate the maximum and minimum temperatures
+new_bikes %>% 
+    summarize(min(temp_feel), max(temp_feel))
+```
+
+
+
+# Solution: Additional Practice 
+
+```{r warning = FALSE, message = FALSE, eval = TRUE, echo = FALSE}
+# Load packages and import data
+library(readr)
+library(ggplot2)
+library(dplyr)
+
+lifts <- read_csv("https://mac-stat.github.io/data/powerlifting.csv")
+lifts <- lifts %>% 
+    mutate(SWR = Age/BestSquatKg)
+```
+
+
+## Exercise 1: Get to know the data
+
+a. Use an appropriate function to look at the first few rows of the data.
+
+```{r eval = TRUE}
+head(lifts)
+```
+
+
+b. Create a new code chunk, and use an appropriate function to learn how much data we have (in terms of cases and variables).
+
+```{r eval = TRUE}
+dim(lifts)
+```
+
+
+c. A case represents an individual lifter at a single weightlifting competition.
+
+d. It looks like some meets may be missing if they weren't detected by the web scraper used by the maintainers of the Open Powerlifting database. They don't describe in detail the process used for transferring PDFs of results to their database, so it's unclear what errors in transcription might have resulted. Still, it's worth taking a moment to appreciate the labor they put into making these results available for passionate powerlifters to explore.
+
+
+## Exercise 2: Mutating our data
+
+Strength-to-weight ratio (SWR) is defined as `TotalKg`/`BodyweightKg`. We can use the `mutate()` function from the `dplyr` package to create a new variable in our dataframe for `SWR` using the following code:
+
+```{r eval = TRUE}
+lifts <- lifts %>% 
+    mutate(SWR = TotalKg / BodyweightKg)
+```
+
+Adapt the example above to create a new variable called `SWR`, where SWR is defined as `TotalKg`/`BodyweightKg`.
+
+## Exercise 3: Get to know the outcome/response variable
+
+Let's get acquainted with the `SWR` variable.
+
+- Construct an appropriate plot to visualize the distribution of this variable, and compute appropriate numerical summaries.
+
+```{r eval = TRUE}
+lifts %>%
+  ggplot(aes(SWR)) +
+  geom_histogram(bins = 10, col = "black")
+
+lifts %>% summarize(mean(SWR, na.rm = TRUE), min(SWR, na.rm = TRUE), max(SWR, na.rm = TRUE), sd(SWR, na.rm = TRUE))
+```
+
+
+- Write a good paragraph interpreting the plot and numerical summaries.
+
+Strength-to-weight (SWR) ratio ranges from 0.18 to 12.46, with a mean SWR of 4.4. SWR varies about 2.08 units above and below the mean. We observe that most SWRs appear to be centered between 4 and 7, with a slight right-skew to the data. The distribution of SWRs appears to be unimodal. 
+
+## Exercise 4: Data visualization - two quantitative variables
+
+We'd like to visualize the relationship between body weight and the strength-to-weight ratio. A **scatterplot** (or informally, a "point cloud") allows us to do this! The code below creates a scatterplot of body weight vs. SWR using `ggplot()`.
+
+```{r eval = TRUE}
+# scatterplot
+
+# The alpha = 0.5 in geom_point() adds transparency to the points
+# to make them easier to see. You can make this smaller for more transparency
+lifts %>%
+  ggplot(aes(x = BodyweightKg, y = SWR)) +
+  geom_point(alpha = 0.5)
+```
+
+
+a & b. In our plot aesthetics, we now have *two* variables listed (an "x" and a "y") as opposed to just a single variable. The "geom" for a scatterplot is `geom_point`. Otherwise, the code structure remains very similar!
+
+c. In general, it seems as though higher body weights are associated with lower SWRs. Once body weight (in kg) is greater than 50, the relationship between body weight and SWR appears to be weakly negative, and roughly linear. The points are very dispersed, indicating that there is a good amount of variation in this relationship (hence the term "weak").
+
+
+## Exercise 5: Scatterplots - patterns in point clouds
+
+Sometimes, it can be easier to see a pattern in a point cloud by adding a **smoothing** line to our scatterplots. The code below adapts the code in Exercise 4 to do this: 
+
+```{r eval = TRUE}
+# scatterplot with smoothing line
+lifts %>%
+  ggplot(aes(x = BodyweightKg, y = SWR)) +
+  geom_point(alpha = 0.5) +
+  geom_smooth()
+```
+
+a. This doesn't change my answer much (but it may have changed yours, and that's okay!). It does appear as though there is a weakly negative relationship between body weight and SWR, particularly once body weight is above a certain value.
+
+b. I would say that yes, a linear relationship here seems reasonable! Even though there is some curvature in the smoothed trend line early on, that is based on **very few** data points. Those data points with low body weights aren't enough to convince me that the relationship couldn't be roughly linear between body weight and SWR.
+
+## Exercise 6: Correlation
+
+b. I would describe the correlation between body weight and SWR as weak and negative.
+
+c. I'll guess -0.1, since the line is negative, and the points are very dispersed around the line!
+
+
+## Exercise 7: Computing correlation in R
+
+
+```{r eval = TRUE}
+# correlation
+
+# Note: the order in which you put your two quantitative variables into the cor
+# function doesn't matter! Try switching them around to confirm this for yourself
+# Because of the missing data, we need to include the use = "complete.obs" - otherwise the correlation would be computed as NA
+lifts %>%
+    summarize(cor(SWR, BodyweightKg, use = "complete.obs"))
+```
+
+So close to our guess!
+
+## Exercise 8: Limitations of correlation
+
+```{r eval = TRUE}
+# correlation between x1, y1
+anscombe %>% summarize(cor(x1, y1))
+
+# correlation between x2, y2
+anscombe %>% summarize(cor(x2, y2))
+
+# correlation between x3, y3
+anscombe %>% summarize(cor(x3, y3))
+
+# correlation between x4, y4
+anscombe %>% summarize(cor(x4, y4))
+
+```
+
+a. Each of these correlations are nearly the same!
+
+b. Each of these correlations is relatively strong, and positive, since 0.8 is positive and closer to 1 than 0.
+
+d. 
+
+```{r eval = TRUE}
+# scatterplot: x1, y1
+anscombe %>%
+  ggplot(aes(x = x1, y = y1)) +
+  geom_point()
+
+# scatterplot: x2, y2
+anscombe %>%
+  ggplot(aes(x = x2, y = y2)) +
+  geom_point()
+
+# scatterplot: x3, y3
+anscombe %>%
+  ggplot(aes(x = x3, y = y3)) +
+  geom_point()
+
+# scatterplot: x4, y4
+anscombe %>%
+  ggplot(aes(x = x4, y = y4)) +
+  geom_point()
+
+```
+
+e. The message of this exercise is that data visualization is important *in addition* to numerical summaries! Many different sets of points can have nearly the same correlation, but display very different patterns in point clouds upon closer inspection. Reporting correlation alone is not enough to summarize the relationship between two quantitative variables, and should be accompanied by a scatter plot!
+
+## Exercise 10: Correlation and **extreme** values
+
+```{r eval = TRUE}
+# create a toy dataset
+set.seed(1234)
+x <- rnorm(100, mean = 5, sd = 2)
+y <- -3 * x + rnorm(100, sd = 4)
+dat <- data.frame(x = x, y = y)
+```
+
+a. 
+
+```{r eval = TRUE}
+# scatterplot
+dat %>% 
+  ggplot(aes(x = x, y = y)) +
+  geom_point()
+```
+
+b. The correlation between x and y is moderately strong and negative.
+c. I'll guess -0.6, since the relationship is negative and is sort of in-between weak and strong.
+d. 
+
+```{r eval = TRUE}
+# correlation
+dat %>% summarize(cor(x, y))
+```
+
+e. 
+
+```{r eval = TRUE}
+# creating dat_new1
+x1 <- c(x, 15)
+y1 <- c(y, -45)
+dat_new1 <- data.frame(x = x1, y = y1)
+```
+
+f. 
+
+```{r eval = TRUE}
+# scatterplot
+dat_new1 %>%
+  ggplot(aes(x1, y1)) +
+  geom_point()
+
+# correlation
+dat %>% summarize(cor(x1, y1))
+```
+Our correlation stayed roughly the same with the addition of this new point!
+
+g. 
+
+```{r eval = TRUE}
+# creating dat_new1
+x2 <- c(x, 15)
+y2 <- c(y, 45)
+dat_new2 <- data.frame(x = x2, y = y2)
+```
+
+h. 
+
+```{r eval = TRUE}
+# scatterplot
+dat_new2 %>%
+  ggplot(aes(x2, y2)) +
+  geom_point()
+
+# correlation
+dat_new2 %>% summarize(cor(x2, y2))
+```
+The correlation changes quite a bit with the addition of this new point! Something to note is that this new point does not follow the rough linear trend that the original points had, that the first point we considered adding also had. This line seems way off base, comparatively!
+
+i. The takeaway message here is that even though both of these additional points might be considered "outliers" because they have extreme x values, one changes the relationship between x and y much more than the other. In this case, the second point we considered would be **influential** because it changes the observed relationship between all x's and y's much more than the first point we considered. Not all "outliers" are considered equal!
+
+j. 
+
+```{r eval = TRUE}
+dat_new1 %>%
+  ggplot(aes(x1, y1)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE)
+
+dat_new2 %>%
+  ggplot(aes(x2, y2)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE)
+```
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+---
+title: "Course Schedule"
+sidebar: false
+---
+
+The (tentative) course schedule below will be filled in throughout the semester. For each day, there will be written on what is due ahead of class time OR whats' the big thing (like quizzes!). The “Announcements” column is (hopefully) self-explanatory. Any urgent announcements will be made over email (moodle).
+
+::: {.callout-note collapse="true" title="Week 1"}
+| Monday         | Wednesday | Friday | Announcements |
+|:---------------|:----------|:-------|:--------------|
+| Enjoy, no class | **02/04: First day of class! Unit 01: Introduction** <br><br> _Before class:_ <br> - Read the course [syllabus](syllabus.qmd). I will assume that you understand all course policies beginning on Wednesday! <br> - Familiarize yourself with Canvas/Moodle and the course website | **02/06: Unit 02: Descriptive Statistics**  | Welcome (back) to campus! |
+:::
+
+::: {.callout-note collapse="true" title="Week 2"}
+| Monday         | Wednesday | Friday | Announcements |
+|:---------------|:----------|:-------|:--------------|
+| **02/09: Unit 02: Descriptive Statistics** | **02/11: Descriptive Statistics + Unit 03: Simple Linear Regresion** | **02/12: Unit 03: Simple Linear Regresion**| - HW#1 is posted on the [Homeworks](assignments.qmd) tab (due Monday, Feb 09, in class) |
+:::

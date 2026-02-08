@@ -1,0 +1,12 @@
+---
+title: "Homeworks"
+sidebar: false
+---
+
+
+
+
+**...due in class!**
+
+- [HW 1](assignments/HW-1.pdf), due Monday, 02/02
+

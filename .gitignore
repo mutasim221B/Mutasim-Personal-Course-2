@@ -1,0 +1,11 @@
+# R and RStudio
+*.Rproj
+*.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+# macOS system files
+.DS_Store
+/.quarto/
+.Rproj.user

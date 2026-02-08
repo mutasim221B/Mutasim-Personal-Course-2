@@ -1,0 +1,280 @@
+[
+  {
+    "objectID": "syllabus.html",
+    "href": "syllabus.html",
+    "title": "Introduction to Statistical Modeling",
+    "section": "",
+    "text": "Section 03: M/W/F 09:40-10:40am\nSection 04: M/W/F 12:00-01:00pm\nWelcome to Introduction to Statistical Modeling! Whether in life or research, we’re often interested in relationships between 2+ variables. For example, how is one’s commute time to class related to their distance from campus and mode of transportation? Or, how is voter participation related to a person’s age and political affiliation? Statistical modeling is the art and science of turning data into information about such relationships of interest.\nBeing able to summarize, interpret, and communicate about data are crucial for navigating today’s information landscape, and these are precisely the skills that we’ll build in this class. Throughout the semester, we’ll study the fundamental methods that statisticians use to extract knowledge from data, emphasizing statistical literacy & intuition, real data applications, and modern computing over memorizing facts and formulas."
+  },
+  {
+    "objectID": "syllabus.html#important-technical-concepts",
+    "href": "syllabus.html#important-technical-concepts",
+    "title": "Introduction to Statistical Modeling",
+    "section": "Important technical concepts",
+    "text": "Important technical concepts\nUpon completion of this course, students should be able to:\n\nBuild, use, and interpret graphical and numerical summaries of data.\nGiven a research question: identify an appropriate model, use sample data to fit the model in RStudio (for project!), evaluate the model’s quality, and quantify our uncertainty in the model’s coefficients and predictions.\nUse a sample model to make predictions & inferences about a population, using prediction/confidence intervals & hypothesis tests.\nInterpret & communicate an analysis in context & using appropriate notation, argumentation, & evidence.\nDescribe potential advantages, limitations, and ethical considerations of a data set and statistical analysis.\nIdentify common pitfalls in statistical analyses (e.g., spurious correlation vs. causal relationships, extrapolation, multicollinearity, multiple testing, practical vs. statistical significance).\nAccurately describe methods and results in a way that is scientifically sound and widely accessible.\nWork productively and effectively in a group setting for the project."
+  },
+  {
+    "objectID": "syllabus.html#important-statistical-skills",
+    "href": "syllabus.html#important-statistical-skills",
+    "title": "Introduction to Statistical Modeling",
+    "section": "Important statistical skills",
+    "text": "Important statistical skills\nThe following skills are essential both within and beyond Statistics, and demonstrably improve your own learning and the learning of those around you:\n\nMove beyond a “homework only” study approach. Develop a deeper understanding of the material through continued review, reflection, and practice.\nThink creatively, and build confidence, applying course concepts in open-ended, novel settings.\nBe comfortable working through challenges and mistakes.\nContribute to a welcoming and engaged learning environment."
+  },
+  {
+    "objectID": "syllabus.html#about-your-professor",
+    "href": "syllabus.html#about-your-professor",
+    "title": "Introduction to Statistical Modeling",
+    "section": "About your professor",
+    "text": "About your professor\n\nMd Mutasim Billah, PhD\nPronunciation: listen here\nOffice: My Office\nEmail: mbillah@macalester.edu\n\n\n\n\n\n\nNotes from “your professor”\n\n\n\nGreetings! You can call me Bill or Professor Billah & I use he/him pronouns. Back when I was an undergrad student, I didn’t have the best experience in Intro Stat—those courses often emphasized formulas over real understanding. That experience has shaped my teaching—I concentrate on illustrating how statistical theories connect and can be applied in the real world. I’m excited to teach Introduction to Statistical Modeling and to create a more meaningful experience—one that helps all students feel confident applying it beyond the classroom. My methodological research lies at the intersection of statistical genetics, biostatistics, and genomics. My current research interests include developing novel statistical methods and computationally efficient bioinformatics tools, leveraging modern machine- and deep-learning approaches analyze high-dimensional next-generation sequencing and multi-omics data to identify genes and regulatory mechanisms underlying complex diseases. Outside of my academic work, I enjoy spending time outdoors with family and friends or cooking variety of foods. If you can’t find me anywhere, I might be busy playing soccer or exploring new worlds on my PS5 or PSVR!\n\n\nDrop-in (office) hours:\n\nLocation: My office\nTimes: M/W/F: 01:30-02:30 pm.\nBy Appointment: I’m also happy to meet one-on-one! Shoot me an email and we can arrange it either in-person or over zoom, password: 123456.\nEmail Response Time: I do my best to reply to emails promptly during weekdays.\nPlease note that messages sent after 5:00 pm or on weekends may take longer to receive a response."
+  },
+  {
+    "objectID": "syllabus.html#about-your-gtas",
+    "href": "syllabus.html#about-your-gtas",
+    "title": "Introduction to Statistical Modeling",
+    "section": "About your GTAs",
+    "text": "About your GTAs\nWe have several wonderful GTAs this semester! Their role is to help students with content questions, assist in the navigation of available resources, advise on studying approaches, and assist with concepts, tools, and skills. Students are accountable for their own learning; as such, preceptors are not allowed to share answers to assignments (unless specifically directed by the instructor), they are not expected to immediately know the right approach to an exercise, and they do not provide assistance outside of office hours.\nIn hiring preceptors, we prioritize and emphasize kindness and respect. I expect the same of students in their interactions with the preceptors. Please utilize and respect their experience and commitment to supporting you in this course."
+  },
+  {
+    "objectID": "syllabus.html#online-course-manual",
+    "href": "syllabus.html#online-course-manual",
+    "title": "Introduction to Statistical Modeling",
+    "section": "Online Course Manual",
+    "text": "Online Course Manual\nThe online course website includes all in-class activities/handouts and a daily Schedule. All links and materials needed will be provided on the schedule tab of this website."
+  },
+  {
+    "objectID": "syllabus.html#canvasmoodle",
+    "href": "syllabus.html#canvasmoodle",
+    "title": "Introduction to Statistical Modeling",
+    "section": "Canvas/Moodle",
+    "text": "Canvas/Moodle\nCanvas/Moodle includes general resources, a broad course calendar, submission links, feedback, and a forum for student questions."
+  },
+  {
+    "objectID": "syllabus.html#statistical-software",
+    "href": "syllabus.html#statistical-software",
+    "title": "Introduction to Statistical Modeling",
+    "section": "Statistical software",
+    "text": "Statistical software\nWe will use the (completely free and open source) R programming language for the project in this course. RStudio (an interface for R) will facilitate our use of R. Download for Windows or Mac at https://posit.co/downloads/. Note: You first need to download and install R on your computer in order to use the desktop version of RStudio\nMore detailed instructions on downloading, installing, and getting started with R, and RStudio are available on the R Resources tab."
+  },
+  {
+    "objectID": "syllabus.html#office-hours-oh-and-r-support",
+    "href": "syllabus.html#office-hours-oh-and-r-support",
+    "title": "Introduction to Statistical Modeling",
+    "section": "Office hours (OH) and R Support",
+    "text": "Office hours (OH) and R Support\nOH: Across the instructor and GTAs, there are several office hours each week. Names, times, and locations are on the Moodle course calendar. IMPORTANT: Always check the calendar before attending OH."
+  },
+  {
+    "objectID": "syllabus.html#asking-questionscommunicating",
+    "href": "syllabus.html#asking-questionscommunicating",
+    "title": "Introduction to Statistical Modeling",
+    "section": "Asking questions/communicating",
+    "text": "Asking questions/communicating\n\nOffice Hours\nOH are a great place to chat about the course, career planning, life,… Please visit us!!\n\nOH times & locations are on the Canvas/Moodle course calendar.\nOH are oriented around group discussion. They are not first come, first served appointments.\nSince it’s not an effective way to deepen your learning, OH are not a place to sit and do assignments with me or preceptors. It’s an opportunity to discuss concepts & specific questions.\n\n\n\nCanvas/Moodle Forum: Discussion Board\nThis forum is where we’ll communicate outside class. Students can post and answer comments / questions there. This is an informal way to converse, ask questions, share info, & connect. Do not rely on receiving responses outside weekdays between 9am & 5pm."
+  },
+  {
+    "objectID": "syllabus.html#what-to-do-when-you-have-a-question-for-me",
+    "href": "syllabus.html#what-to-do-when-you-have-a-question-for-me",
+    "title": "Introduction to Statistical Modeling",
+    "section": "What to do when you have a question for me?",
+    "text": "What to do when you have a question for me?\n\nIf it’s non-private (e.g. about policies, homework (Practice Problems), class activities, etc), you must post it on Discussion Board on Canvas/Moodle. Remember- collaboration is the KEY!\nIf it’s personal (e.g. about an absence), email me.\nIt’s good, professional practice to check whether your question is already answered in the provided resources. For example:\n\nInfo (what to do if you miss class): syllabus\nDue dates: course calendar at the top of Moodle + course schedule in the online manual\nQuiz dates: syllabus + course calendar at the top of Moodle + course schedule in the online manual\nFinals week: syllabus + course calendar at the top of Moodle + course schedule in the online manual"
+  },
+  {
+    "objectID": "syllabus.html#thriving-in-introduction-to-statistical-modeling",
+    "href": "syllabus.html#thriving-in-introduction-to-statistical-modeling",
+    "title": "Introduction to Statistical Modeling",
+    "section": "Thriving in Introduction to Statistical Modeling",
+    "text": "Thriving in Introduction to Statistical Modeling\n\n\n\n\n\n\n🗓️ Plan Ahead\n\n\n\nYou should plan to spend ~10-12 hours on any 4-credit course, including class time.1 Stay up-to-date on the course calendar and carve out time for studying & doing homework.\n\n\n\n\n\n\n\n\n✅ Do the Things\n\n\n\nAt minimum, thriving in this course requires the completion of some concrete tasks. Complete all assignments, regularly attend & engage in class, complete in-class activities (which might mean completing work outside of class), and check the activity solutions.\n\n\n\n\n\n\n\n\n🏗️ Build a Foundation\n\n\n\nIf your main focus is on checking off some boxes, you won’t get much out of this course (or college in general). Deeper, enduring learning requires more. Carve out time to rewrite, reflect upon, & review your notes. Summarize concepts in your own words.\n\n\n\n\n\n\n\n\n🎉 Engage, Ask Questions, Have Fun\n\n\n\nActively participate in the class & take ownership of your learning. PLEASE: Don’t be afraid to ask for help, make mistakes, and ask questions! These skills are critical to your well-being & learning. Finally, have some fun, be curious, and reflect upon what surprises you about the material and yourself"
+  },
+  {
+    "objectID": "syllabus.html#flexibility",
+    "href": "syllabus.html#flexibility",
+    "title": "Introduction to Statistical Modeling",
+    "section": "Flexibility",
+    "text": "Flexibility\nI provide transparent accommodations to all students. It helps reduce stress and the “hidden curriculum” (not everybody feels comfortable asking for flexibility).\n\nMissed Class: It’s okay to miss class in the case of an emergency. Please see the ‘Absences’ tab below for details.\nPractice Problems (PP): Limited extensions and limited mistakes without penalty.\nCheckpoints: Some class periods will have course videos and readings assigned ahead of time. For each class period where this is the case, a checkpoint quiz (on Canvas/Moodle) must be completed by 09:00 am. Checkpoints may be attempted as many times as you’d like, but to earn completion credit for a given checkpoint you must score 100% by your final attempt. These short quizzes are designed to ensure that you stay on top of course material, since much of the content in this course builds on itself.\nQuizzes: Limited revisions. Additional flexibility will be provided in rare extenuating circumstances, upon discussion. Exceptions must be discussed with me (not assumed) early on (not after the fact).\n\n\n\n\n\n\n\n🤝 PLEASE REACH OUT WHEN YOU NEED HELP."
+  },
+  {
+    "objectID": "syllabus.html#absences",
+    "href": "syllabus.html#absences",
+    "title": "Introduction to Statistical Modeling",
+    "section": "Absences",
+    "text": "Absences\nIt’s okay to miss the occasional class. Except in rare extenuating circumstances (which must be discussed in advance): - 3 or fewer absences will not impact your grade - 4-6 absences will impact your grade (see Calculating Final Grades section) - you cannot pass the course if you accrue 7+ absences (more than 25% of class sessions)\n\n\n\n\n\n\nWhat to Do If You Miss Class\n\n\n\n\n📧 Send me a quick email. You do not need to share a reason for your absence, especially if it’s personal. It’s just a simple courtesy & keeps communication lines open.\n📅 Check the Course Schedule in the online manual for what is happening in class that day.\n📝 Complete the in-class activity on your own & check the solutions posted in the online manual.\n💬 Ask any follow-up questions on the Moodle forum or in office hours (OH)."
+  },
+  {
+    "objectID": "syllabus.html#artificial-intelligence-ai",
+    "href": "syllabus.html#artificial-intelligence-ai",
+    "title": "Introduction to Statistical Modeling",
+    "section": "Artificial Intelligence (AI)",
+    "text": "Artificial Intelligence (AI)\nUsing AI tools is an emerging skill. You may use AI (ChatGPT, Gemini, Grok, etc), with some caveats & limitations:\n\nAI is often wrong, thus is not a good resource on topics for which you don’t yet have expertise. Relatedly, though AI can be helpful with parts of a statistical analysis (eg: getting unstuck on code, checking grammar), you have to guide that process (eg: what questions are we trying to answer? what’s a reasonable approach?).\nWork on an exercise for at least 30 minutes before even thinking about AI. You will learn very little if you overly rely on AI, hence be unprepared for other interactions with the material (eg: in-class discussions, quizzes, future courses that build upon 155, etc). Learning comes from you doing the puzzling, not from you producing a correct answer.\nWhether or not you use AI, you must be able to defend/explain any code/discussion you hand in. You cannot simply use AI to bypass your own learning.\nYou may not use AI to generate entire arguments or discussions. Putting code and discussions into your own words is critical for your own deeper learning, independent thinking, and creativity. (For example, imagine how little you’d learn in a language course if you simply used AI to translate all text for you!!)\nAny use of AI must be cited, just like any other resource. Using AI without citation, to generate entire discussions / code blocks, or without being able to defend the results. Policy violations will result in a score of 0 on the work & be reported to the Asst. Dean of Academic Programs & Advising."
+  },
+  {
+    "objectID": "syllabus.html#engagement",
+    "href": "syllabus.html#engagement",
+    "title": "Introduction to Statistical Modeling",
+    "section": "(1) Engagement",
+    "text": "(1) Engagement\nEngagement is important to your own learning & to fostering a supportive learning community.\n\n\n\n\n\n\n📌 Expectations\n\n\n\n\nDo not miss more than 3 in-person class sessions. (4–6 absences will lower your grade. 7+ absences will result in a D/NC.)\nWhen attending class:\n\nBe on time & don’t leave early\n\nDo not use your phone (phones must be put away when you enter the course, even if class hasn’t started)\n\nDo not use your laptop for anything other than taking notes and in-class activities (e.g., no videos, no email, no messaging apps, etc.)\n\nBe actively present (e.g., don’t work alone, don’t work on other courses, etc.)\n\nOutside class:\n\nCheck your email for announcements (sent via Moodle) and stay updated on the Moodle forum\n\nWhen you have questions, or just want to chat, please stop by OH!"
+  },
+  {
+    "objectID": "syllabus.html#collaboration",
+    "href": "syllabus.html#collaboration",
+    "title": "Introduction to Statistical Modeling",
+    "section": "(2) Collaboration",
+    "text": "(2) Collaboration\nCollaboration improves higher-level thinking, confidence, communication, community, & more. You will work in groups in and outside class. These groups may occasionally switch & may sometimes be assigned.\n\n\n\n\n\n\n🤝 Expectations\n\n\n\n\nIn group settings(for the project), both in and outside class, you:\n\nUse your group members’ correct names and pronouns\n\nActively contribute to discussions\n\nActively include all other group members in discussion\n\nCreate a space where others feel comfortable making mistakes & sharing their ideas\n\nEffectively communicate with your group about meeting times, etc."
+  },
+  {
+    "objectID": "syllabus.html#preparation-checkpoints",
+    "href": "syllabus.html#preparation-checkpoints",
+    "title": "Introduction to Statistical Modeling",
+    "section": "(3) Preparation (Checkpoints)",
+    "text": "(3) Preparation (Checkpoints)\nFor some topics, before class you will watch videos which introduce new concepts, then take a low-stakes checkpoint quiz (CP). This will help us prepare for class in those topics, build a common foundation, & maximize our time together – just how readings & reading reflections might be used in another class!\n\n\n\n\n\n\n📊 Expectations\n\n\n\nComplete at least 5 (out of 7) CPs without affecting your final grades!\n\n\n\n\n\n\n\n\n📜 Policies\n\n\n\n\nCPs may be attempted as many times as you’d like, but to earn completion credit for a given checkpoint you must score 100% by your final attempt.\nIf you complete less than 5 (out of 7) CPs (≈80%) before the time they are due, your overall course grade will be lowered by 1/3 of a letter grade (i.e. B –&gt; B-, A- –&gt; B+, etc.).\n\nIf you complete less than 3 (out of 7) CPs (≈50%) before the time they are due, your overall course grade will be lowered by 1 of a letter grade (i.e. A –&gt; B, etc.).\n\nCPs are due 09:00am on the assigned date. There are no extensions for CPs, as they are important preparation for the relevant class session."
+  },
+  {
+    "objectID": "syllabus.html#practice-problems-and-homeworks",
+    "href": "syllabus.html#practice-problems-and-homeworks",
+    "title": "Introduction to Statistical Modeling",
+    "section": "(4) Practice Problems and Homeworks",
+    "text": "(4) Practice Problems and Homeworks\nFor each Unit, you will have practice problem sets to practice- the solution will be posted as well in the course website. Besides, you also will have Homework for each unit.\n\nGrading: HW grades will be based on Exercises & Presentation.\nExtensions: Limited extensions will be provided.\nDiscussion Board: Use the Canvas/Moodle board as your first stop for Practice Problems (PP):\n\nAsk first: Post questions about PP on Moodle. Include the problem number, a brief summary of your approach, and where you’re stuck. For coding, share the entire code chunk for the related problem.\nHelp each other: If you know (or suspect) the answer, reply! Explaining your reasoning helps everyone learn.\nShare alternatives: Multiple correct methods are welcome—post yours with explanation.\nShow your work: To earn full collaboration credit, provide complete, well-explained solutions/steps. Partial or unexplained answers may lose points.\nBe professional: Be respectful, cite any resources you used, and write solutions in your own words.\nGoal: work together as a class so everyone can earn the PP points while learning deeply."
+  },
+  {
+    "objectID": "syllabus.html#project-independence-application",
+    "href": "syllabus.html#project-independence-application",
+    "title": "Introduction to Statistical Modeling",
+    "section": "(5) Project (Independence & Application)",
+    "text": "(5) Project (Independence & Application)\nMore details will be provided later in the semester. Here are some basics:\n\nWe’ll start working on projects in ~week 6, with the majority of the work happening later in the semester.\nThe projects are collaborative. You will be working in groups. Though you will work in assigned groups at various points throughout the semester, you will pick your own group for the project. This is something to think about as you meet other students in class and learn about common interests.\nProject grades will be based upon a final group written report (no oral presentation), multiple group and individual checkpoints, and individual contributions to the project (thus it’s possible for different group members to earn different grades)."
+  },
+  {
+    "objectID": "syllabus.html#quizzes-content-expertise",
+    "href": "syllabus.html#quizzes-content-expertise",
+    "title": "Introduction to Statistical Modeling",
+    "section": "(6) Quizzes (Content Expertise)",
+    "text": "(6) Quizzes (Content Expertise)\nYour course engagement, collaboration, preparation, practice, and application will support your deeper understanding of the course material. This will be assessed through three in-person quizzes. You must schedule all travel and other commitments around them — there will not be any alternative quiz times.\n\nQuiz 1: TBD\nQuiz 2: TBD\nQuiz 3: TBD\n\n\n\n\n\n\n\n📜 Quiz Policies\n\n\n\n\nAll quizzes will have the following format:\n\nTaken individually, using pen/pencil & paper\n\nYou will not need to write code or use a calculator, but you will need to read & interpret R output\n\nClosed notes, but you may use a 3x5 index card with writing on both sides. These can be handwritten or typed, but you may not include screenshots or share note cards. Making your own card is important to the review process- as you are required to submit the index card along with the answer paper.\n\nQuizzes 2 & 3 will be cumulative. This is unavoidable as the material builds upon itself.\nQuiz corrections:\nYou can earn up to 33% of missed points back on Quizzes 1 & 2 if you:\n\nWrite a reflection of how you prepared for the quiz and where you felt strongest or more uncertain in your understanding before taking the quiz; and\n\nSubmit your quiz corrections along with your reflection to the instructor, no later than one week after quizzes have been handed back.\nNote: Quiz 3 corrections are not allowed due to time constraints at the end of the semester."
+  },
+  {
+    "objectID": "syllabus.html#grading-system",
+    "href": "syllabus.html#grading-system",
+    "title": "Introduction to Statistical Modeling",
+    "section": "Grading system",
+    "text": "Grading system\nThe grading system in this course is designed to help you achieve the learning objectives while allowing space to make and learn from mistakes along the way. Your final course grade will consist of three, evenly-weighted components (Quizzes, Practice Problems, and the Project), modified by your progress toward the Engagement, Collaboration, and Preparation (Checkpoint) goals:\n\n\n\nCourse Percentage\n25% Homeworks +\n50% Quiz total +\n25% Project\n\n\n\nGrade\nCourse percentage\n\n\n\n\nA\n&gt; 90%\n\n\nAB\n85–90%\n\n\nB\n80–85%\n\n\nBC\n75–80%\n\n\nC\n70–75%\n\n\nCD\n65–70%\n\n\nD\n60–65% or 7+ absences\n\n\nF\n0–60%\n\n\n\n\n\n  \n\n\nGrade Modifiers\nEngagement (including attendance) +\nPreparation (checkpoints)\n\n\n\n\n\n\n\nModifier\nScenario\n\n\n\n\nnone (e.g. A → A)\nMeets expectations in all two areas (Engagement and Preparation)\n\n\n⅓ lower grade (e.g. A → A-)\nDemonstrates strong progress (e.g., 4 absences OR less than 5 (out of 7) CPs)\n\n\n1 lower grade (e.g. A → B)\nDemonstrates moderate progress (e.g., 5–6 absences OR less than 3 (out of 5) CPs)\n\n\n&gt;1 lower grade\nDemonstrates little progress toward expectations in two areas\n\n\nDrop to D\nHas 7+ absences\n\n\n\nNOTE: The table presents general scenarios. Please reach out if you want to discuss progress in Engagement and/or Preparation.\n\n\n\n\n\n\n\n\n\n📊 Grading Caveats\n\n\n\n\nThe goal of sharing this specific information is to provide transparency around final grades, hence clear goals to work toward. That said, assigning grades is much more nuanced than any grading rubric / framework might suggest (for good reasons). What’s shared here is a worst case scenario – it represents the lowest a grade might be if you meet the corresponding goals.\nMoodle does NOT correctly weight your grades, thus should not be used alone to monitor your progress."
+  },
+  {
+    "objectID": "syllabus.html#what-to-do-if-you-miss-class",
+    "href": "syllabus.html#what-to-do-if-you-miss-class",
+    "title": "Introduction to Statistical Modeling",
+    "section": "What to Do If You Miss Class",
+    "text": "What to Do If You Miss Class\nIf you do miss class, I expect you to complete any in-class activities on your own. Check the solutions in the online manual and come to office hours with any follow-up questions."
+  },
+  {
+    "objectID": "syllabus.html#late-work-on-homework-problems",
+    "href": "syllabus.html#late-work-on-homework-problems",
+    "title": "Introduction to Statistical Modeling",
+    "section": "Late work on Homework Problems",
+    "text": "Late work on Homework Problems\nThroughout the semester, you may use up to three, three-day extensions. These three extensions can be used on Homeworks only, not quizzes. The purpose of deadlines (and extensions) are to keep you accountable for your own learning, to keep you on track with the pace of the course (which builds upon itself throughout the semester), and to provide preceptors and myself with the ability to provide you with timely feedback on assignments. Since the Problem Sets are due roughly every two weeks, you must begin working on them early if you want to succeed.\nExtensions can be used automatically, without letting me know in advance. The Moodle dropboxes for assignments will close exactly 3 days after the original deadline (i.e. Mondays at 11:59pm), and I will not accept work submitted after that point unless there are extenuating circumstances that you have communicated with me about ahead of the original deadline. If you email me a completed assignment after a 3-day extension is up, I may have the preceptors provide you with feedback, but you will not receive credit for the assignment (equivalent to “Needs Improvement” on every question of the relevant assignment).\nI expect you to keep track of how many extensions you’ve used. I will do my best to email you a reminder if you have used all three of your extensions and have none remaining.\nIf you have run out of extensions and/or an extenuating circumstance occurs that impacts your ability to submit assignments on time, please email me to discuss the situation. I am happy to be flexible as long as you communicate!"
+  },
+  {
+    "objectID": "syllabus.html#religious-observance",
+    "href": "syllabus.html#religious-observance",
+    "title": "Introduction to Statistical Modeling",
+    "section": "Religious Observance",
+    "text": "Religious Observance\nStudents may wish to take part in religious observances that occur during the semester. If you have a religious observance/practice that conflicts with your participation in the course, please contact me before the end of the second week of the semester to discuss appropriate accommodations.\nIn an effort to respect religious diversity, I request that students who plan to observe a religious holiday during scheduled class meetings/class requirements talk to me about reasonable consideration by the end of the second week of the course."
+  },
+  {
+    "objectID": "syllabus.html#well-being",
+    "href": "syllabus.html#well-being",
+    "title": "Introduction to Statistical Modeling",
+    "section": "Well-being",
+    "text": "Well-being\nI want you to succeed. Both here at Macalester and beyond. To help make this happen, I am committed to the following.\nRespect: Everyone comes from a different path through life, and it is our moral duty as human beings to listen to each other without judgment and to respect one another. I have no tolerance for discrimination of any kind, in and out of the classroom.\nSensitive Topics: Applications in this course span issues in science, policy, and society. As such, we may sometimes address sensitive topics. I will try to announce in class if an assignment or activity involves a potentially sensitive topic. If you have reservations about a particular topic, please come talk to me to discuss possible options.\nAccommodations: If you need accommodations for any reason, please contact Disability Services to discuss your needs, and speak with me as soon as possible afterwards so that we can discuss your accommodation plan. If you already have official accommodations, please discuss these with me within the first week of class so that you get off to a great start. Contact me if you have other special circumstances. I will find resources for you.\nTitle IX: You deserve a community free from discrimination, sexual harassment, hostility, sexual assault, domestic violence, dating violence, and stalking. If you or anyone you know has experienced harassment or discrimination, know that you are not alone. Please be aware that as a faculty member, it is my responsibility to report disclosure about sexual harassment, sexual misconduct, relationship violence, and stalking to the Title IX Office. The purpose of this report is to ensure that anyone experiencing harm receives the resources and support they need. I will keep this information private, and it will not be shared beyond this required report.\nGeneral Health and Well-being: I care that you prioritize your well-being in this semester and beyond. Investing time into taking care of yourself will have profound impacts on all aspects of your life. Remember that beyond being a student, you are a human being carrying your own experiences, thoughts, emotions, and identities. It is important to acknowledge any stressors you may be facing, which can be mental, emotional, physical, cultural, financial, etc., and how they can have an impact on you. I encourage you to remember that you have a body with needs. In the classroom, eat when you are hungry, drink water, use the restroom, and step out if you are upset and need some air. Please do what is necessary so long as it does not impede your or others’ ability to be mentally and emotionally present in the course. Outside of the classroom, sleeping well, moving your body, and connecting with others can be strategies can help nourish you."
+  },
+  {
+    "objectID": "syllabus.html#footnotes",
+    "href": "syllabus.html#footnotes",
+    "title": "Introduction to Statistical Modeling",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nMacalester Academic Advising – High School Preparation↩︎"
+  },
+  {
+    "objectID": "project.html",
+    "href": "project.html",
+    "title": "Project",
+    "section": "",
+    "text": "Details are coming soon…"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Introduction to Statistical Modeling",
+    "section": "",
+    "text": "Introduction to Statistical Modeling\nUniversity of Kentucky, Spring 2026\nStatistics is not just about theories & numbers — it’s about making sense of the world.\n\n\n\n\n\n\n📖 A Thought from H. G. Wells\n\n\n\n\n“Statistical thinking will one day be as necessary for efficient citizenship as the ability to read and write.”\n\n\n\nWelcome to the world of Statistics! In this course, you’ll learn how to analyze data, test research hypotheses, and make predictions in ways that matter.\nInstructor: Md Mutasim Billah  Class meeting times:\n\nSection 03: M/W/F 09:40-10:40am\nSection 04: M/W/F 12:00-01:00pm\n\nInstructor’s drop-in (office) hours:\n\nLocation: My office\nTimes: M/W/F: 01:30-02:30 pm.\nBy Appointment: I’m also happy to meet one-on-one! Shoot me an email and we can arrange it either in-person or over zoom, password: 123456.\nEmail Response Time: I do my best to reply to emails promptly during weekdays.\nPlease note that messages sent after 5:00 pm or on weekends may take longer to receive a response.\n\n\nGTA Office Hours: There is a link to a Google Calendar containing all GTA office hours available at the top of the course Canvas/Moodle page!\n\nThis course website will be updated throughout the semester with new activities, assignments, and announcements, so please bookmark this page if you are enrolled in the course!\nIf you find any typos, bugs, dead links, or have other questions, please email mbillah@macalester.edu"
+  },
+  {
+    "objectID": "activities/03_04-slr-intro-formalization.html",
+    "href": "activities/03_04-slr-intro-formalization.html",
+    "title": "Unit 03-01: Simple Linear Regression: Discovery & Model",
+    "section": "",
+    "text": "Here you will find class resources for Unit 03-01: Simple Linear Regression: Discovery & Model, rendered version of this is posted in the course website (Class Resources tab). You can also download the .qmd file here and open in R-studio.",
+    "crumbs": [
+      "Unit 03-01: Simple Linear Regression: Discovery & Model"
+    ]
+  },
+  {
+    "objectID": "activities/03_04-slr-intro-formalization.html#learning-goals",
+    "href": "activities/03_04-slr-intro-formalization.html#learning-goals",
+    "title": "Unit 03-01: Simple Linear Regression: Discovery & Model",
+    "section": "Learning goals",
+    "text": "Learning goals\nBy the end of this lesson, you should be able to:\n\nVisualize and describe the relationship between two quantitative variables using a scatterplot\nDescribe/identify weak/strong, and positive/negative correlation from a point cloud\nBuild intuition for fitting lines to quantify the relationship between two quantitative variables\nDifferentiate between a response/dependent variable and a independent/explanatory variable\nUnderstand the relation between the scatterplot and correlation coefficient.\nDescribe the strength and direction of the linear relationship between two quantitative variables using the correlation coefficient, including interpreting whether an association is weak or strong, and positive or negative.\nWrite a model formula for a simple linear regression model with a quantitative predictor.\nInterpret the estimated intercept and slope coefficients in a simple linear regression model with a quantitative predictor\nCompute predicted/fitted values from a linear regression model formula\nInterpret predicted values in the context of the data",
+    "crumbs": [
+      "Unit 03-01: Simple Linear Regression: Discovery & Model"
+    ]
+  },
+  {
+    "objectID": "activities/03_04-slr-intro-formalization.html#practice-problems",
+    "href": "activities/03_04-slr-intro-formalization.html#practice-problems",
+    "title": "Unit 03-01: Simple Linear Regression: Discovery & Model",
+    "section": "Practice Problems",
+    "text": "Practice Problems\nPractice problems are essential for your understanding, practice, and exploration. I will post the practice problems for Unit 03 after class (please look for my email!).",
+    "crumbs": [
+      "Unit 03-01: Simple Linear Regression: Discovery & Model"
+    ]
+  },
+  {
+    "objectID": "activities/03_04-slr-intro-formalization.html#handouts-activities",
+    "href": "activities/03_04-slr-intro-formalization.html#handouts-activities",
+    "title": "Unit 03-01: Simple Linear Regression: Discovery & Model",
+    "section": "Handouts & Activities",
+    "text": "Handouts & Activities\n\nDownload the Unit 03-01 handouts from here.\nFun Regression by eye activity!",
+    "crumbs": [
+      "Unit 03-01: Simple Linear Regression: Discovery & Model"
+    ]
+  },
+  {
+    "objectID": "R_Resources.html",
+    "href": "R_Resources.html",
+    "title": "R and RStudio Resources",
+    "section": "",
+    "text": "RStudio cheatsheets\nMarkdown (Quarto) basics, and Quarto/RStudio tutorial\nGoogle it! If you have a question about R, someone else probably asked it. Add “R tidyverse” to your search term.\nExample: scatterplot R tidyverse\nNote about ChatGPT for code: Please avoid using ChatGPT as a first resort for R code. It often suggests overly wordy or unfamiliar approaches. Our goal is for you to understand the code you write; sticking to tools and syntax we use in class will support your learning best.\nMore details will be shared soon as we begin the project."
+  },
+  {
+    "objectID": "R_Resources.html#getting-help",
+    "href": "R_Resources.html#getting-help",
+    "title": "R and RStudio Resources",
+    "section": "",
+    "text": "RStudio cheatsheets\nMarkdown (Quarto) basics, and Quarto/RStudio tutorial\nGoogle it! If you have a question about R, someone else probably asked it. Add “R tidyverse” to your search term.\nExample: scatterplot R tidyverse\nNote about ChatGPT for code: Please avoid using ChatGPT as a first resort for R code. It often suggests overly wordy or unfamiliar approaches. Our goal is for you to understand the code you write; sticking to tools and syntax we use in class will support your learning best.\nMore details will be shared soon as we begin the project."
+  },
+  {
+    "objectID": "assignments.html",
+    "href": "assignments.html",
+    "title": "Homeworks",
+    "section": "",
+    "text": "…due in class!\n\nHW 1, due Monday, 02/02"
+  },
+  {
+    "objectID": "pp.html",
+    "href": "pp.html",
+    "title": "Practice Problems",
+    "section": "",
+    "text": "Practice Problem sets are desinged to help you explore and practice beyond the class examples and exercises. I would highly recommend you to complete the exercises in PPs as you finish them in the class. Make sure, at least to complete all the PPs as soon as we finish one Unit.\n\nPP Unit 01, PP Unit 01 Solution\nPP Unit 02, PP Unit 02 Solution"
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Course Schedule",
+    "section": "",
+    "text": "The (tentative) course schedule below will be filled in throughout the semester. For each day, there will be written on what is due ahead of class time OR whats’ the big thing (like quizzes!). The “Announcements” column is (hopefully) self-explanatory. Any urgent announcements will be made over email (moodle).\n\n\n\n\n\n\nWeek 1\n\n\n\n\n\n\n\n\nMonday\nWednesday\nFriday\nAnnouncements\n\n\n\n\nEnjoy, no class\n02/04: First day of class! Unit 01: Introduction  Before class:  - Read the course syllabus. I will assume that you understand all course policies beginning on Wednesday!  - Familiarize yourself with Canvas/Moodle and the course website\n02/06: Unit 02: Descriptive Statistics\nWelcome (back) to campus!\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 2\n\n\n\n\n\n\n\n\nMonday\nWednesday\nFriday\nAnnouncements\n\n\n\n\n02/09: Unit 02: Descriptive Statistics\n02/11: Descriptive Statistics + Unit 03: Simple Linear Regresion\n02/12: Unit 03: Simple Linear Regresion\n- HW#1 is posted on the Homeworks tab (due Monday, Feb 09, in class)"
+  }
+]

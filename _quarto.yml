@@ -1,0 +1,63 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - "*.qmd"
+    - "!activity_templates/"
+    - "!assignments/"
+    - "!working/"
+  post-render: "cp -r activities docs/activity_templates" # adds activity qmd as downloadable template
+  resources:
+    - "data/*.csv"
+    # - "activity_templates/*.qmd"
+    - "assignments/*.pdf"
+    - "Resources/**"
+    - .nojekyll
+
+website:
+  title: "STAT"
+  site-url: https://mutasim221B.github.io/Mutasim-Personal-Course-2/
+  repo-url:  https://github.com/mutasim221b/Mutasim-Personal-Course-2
+  navbar:
+    background: primary
+    search: true
+    left:
+      - file: index.qmd
+        text: "Home"
+      - file: syllabus.qmd
+        text: "Syllabus"
+      - file: schedule.qmd
+        text: "Schedule"
+      - sidebar:activities
+      - file: pp.qmd
+        text: "Practice Problems"
+      - file: assignments.qmd
+        text: "Homeworks"
+      - file: project.qmd
+        text: "Project"
+      - file: R_Resources.qmd
+        text: "R Resources"
+
+  sidebar:
+    - id: activities
+      title: "Class Reources"
+      contents:
+          - "activities/03_04-slr-intro-formalization.qmd"
+
+
+  
+  page-footer:
+    left: |
+      &copy; Md Mutasim Billah, 2026<br>
+      All content licensed under ![](https://static.thenounproject.com/png/70967-200.png){height=20px} ([CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/))
+    right: |
+      Site built with [Quarto](https://quarto.org/)
+
+format:
+  html:
+    theme: sandstone
+    # css: styles.css
+    toc: true      
+    code-overflow: wrap
+
+editor: source

@@ -1,0 +1,41 @@
+---
+title: ""
+sidebar: false
+---
+
+# Introduction to Statistical Modeling  
+University of Kentucky, Spring 2026 
+
+Statistics is not just about theories & numbers — it’s about making sense of the world.  
+
+::: {.callout-tip title="📖 A Thought from H. G. Wells"}  
+> “Statistical thinking will one day be as necessary for efficient citizenship as the ability to read and write.”  
+:::  
+
+Welcome to the world of Statistics! In this course, you’ll learn how to analyze data, test research hypotheses, and make predictions in ways that matter.  
+
+**Instructor:** Md Mutasim Billah <br> **Class meeting times:**
+
+-   **Section 03**: M/W/F 09:40-10:40am
+-   **Section 04**: M/W/F 12:00-01:00pm
+
+**Instructor's drop-in (office) hours:**
+
+-   **Location:** My office 
+-   **Times:** M/W/F: 01:30-02:30 pm.
+-   **By Appointment:** I'm also happy to meet one-on-one! Shoot me an email and we can arrange it either in-person or over [zoom](https://macalester.zoom.us/j/99762878654?pwd=gt7VvSNT0ubKsV2icMV3z8J0GyHKMy.1), password: 123456.
+-   **Email Response Time:** I do my best to reply to emails promptly during weekdays.  
+    Please note that messages sent after 5:00 pm or on weekends may take longer to receive a response.
+
+------------------------------------------------------------------------
+
+[**GTA Office Hours:**]{.underline} There is a link to a Google Calendar containing *all* GTA office hours available at the top of the course Canvas/Moodle page!
+
+
+
+
+------------------------------------------------------------------------
+
+This course website will be updated throughout the semester with new activities, assignments, and announcements, so please bookmark this page if you are enrolled in the course!
+
+If you find any typos, bugs, dead links, or have other questions, please email [mbillah@macalester.edu](mailto:mbillah@macalester.edu){.email}
