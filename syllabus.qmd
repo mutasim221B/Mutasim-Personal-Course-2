@@ -94,7 +94,7 @@ In hiring preceptors, we prioritize and emphasize kindness and respect. I expect
 ## Online Course Manual
 
 
-The [online course website](https://mutasim221b.github.io/Mutasim-Personal-Course/) includes all in-class activities/handouts and a daily [Schedule](schedule.qmd). All links and materials needed will be provided on the schedule tab of this website.
+The [online course website](https://mutasim221b.github.io/Mutasim-Personal-Course-2/) includes all in-class activities/handouts. All links and materials needed will be provided on the schedule tab of this website.
 
 ## Canvas/Moodle
 Canvas/Moodle includes general resources, a broad course calendar, submission links, feedback, and a forum for student questions.
@@ -162,7 +162,7 @@ If your main focus is on checking off some boxes, you won’t get much out of th
 Actively participate in the class & take ownership of your learning. PLEASE: Don’t be afraid to ask for help, make mistakes, and ask questions! These skills are critical to your well-being & learning. Finally, have some fun, be curious, and reflect upon what surprises you about the material and yourself
 :::
 
-[^1]: [Macalester Academic Advising – High School Preparation](https://www.macalester.edu/academic-programs/academicadvising/students/highschool/)
+
 
 <br><br><br><br>
 
