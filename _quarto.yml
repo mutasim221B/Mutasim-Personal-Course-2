@@ -26,7 +26,13 @@ website:
         text: "Home"
       - file: syllabus.qmd
         text: "Syllabus"
+      - file: schedule.qmd
+        text: "Schedule"
       - sidebar:activities
+      - file: pp.qmd
+        text: "Practice Problems"
+      - file: assignments.qmd
+        text: "Homeworks"
       - file: project.qmd
         text: "Project"
       - file: R_Resources.qmd
@@ -36,7 +42,7 @@ website:
     - id: activities
       title: "Class Reources"
       contents:
-          - "activities/03_04-slr-intro-formalization.qmd"
+          - "activities/Unit-07-01-Confidence-Interval.qmd"
 
 
   

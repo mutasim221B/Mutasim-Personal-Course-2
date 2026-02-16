@@ -196,43 +196,113 @@
     "text": "Introduction to Statistical Modeling\nCase Western Reserve University, Spring 2026\nStatistics is not just about theories & numbers — it’s about making sense of the world.\n\n\n\n\n\n\n📖 A Thought from H. G. Wells\n\n\n\n\n“Statistical thinking will one day be as necessary for efficient citizenship as the ability to read and write.”\n\n\n\nWelcome to the world of Statistics! In this course, you’ll learn how to analyze data, test research hypotheses, and make predictions in ways that matter.\nInstructor: Md Mutasim Billah  Class meeting times:\n\nSection 03: M/W/F 09:40-10:40am\nSection 04: M/W/F 12:00-01:00pm\n\nInstructor’s drop-in (office) hours:\n\nLocation: My office\nTimes: M/W/F: 01:30-02:30 pm.\nBy Appointment: I’m also happy to meet one-on-one! Shoot me an email and we can arrange it either in-person or over zoom, password: 123456.\nEmail Response Time: I do my best to reply to emails promptly during weekdays.\nPlease note that messages sent after 5:00 pm or on weekends may take longer to receive a response.\n\n\nGTA Office Hours: There is a link to a Google Calendar containing all GTA office hours available at the top of the course Canvas/Moodle page!\n\nThis course website will be updated throughout the semester with new activities, assignments, and announcements, so please bookmark this page if you are enrolled in the course!\nIf you find any typos, bugs, dead links, or have other questions, please email mbillah@macalester.edu"
   },
   {
-    "objectID": "activities/03_04-slr-intro-formalization.html",
-    "href": "activities/03_04-slr-intro-formalization.html",
-    "title": "Unit 03-01: Simple Linear Regression: Discovery & Model",
+    "objectID": "activities/Unit-07-01-Confidence-Interval.html",
+    "href": "activities/Unit-07-01-Confidence-Interval.html",
+    "title": "Confidence Interval",
     "section": "",
-    "text": "Here you will find class resources for Unit 03-01: Simple Linear Regression: Discovery & Model, rendered version of this is posted in the course website (Class Resources tab). You can also download the .qmd file here and open in R-studio.",
+    "text": "You can download the .qmd file for this activity here and open in R-studio. The rendered version is posted in the course website (Activities tab). I often experiment with the class activities (and see it in live!) and make updates, but I always post the final version before class starts. To be sure you have the most up-to-date copy, please download it once you’ve settled in before class begins.",
     "crumbs": [
-      "Unit 03-01: Simple Linear Regression: Discovery & Model"
+      "Confidence Interval"
     ]
   },
   {
-    "objectID": "activities/03_04-slr-intro-formalization.html#learning-goals",
-    "href": "activities/03_04-slr-intro-formalization.html#learning-goals",
-    "title": "Unit 03-01: Simple Linear Regression: Discovery & Model",
+    "objectID": "activities/Unit-07-01-Confidence-Interval.html#learning-goals",
+    "href": "activities/Unit-07-01-Confidence-Interval.html#learning-goals",
+    "title": "Confidence Interval",
     "section": "Learning goals",
-    "text": "Learning goals\nBy the end of this lesson, you should be able to:\n\nVisualize and describe the relationship between two quantitative variables using a scatterplot\nDescribe/identify weak/strong, and positive/negative correlation from a point cloud\nBuild intuition for fitting lines to quantify the relationship between two quantitative variables\nDifferentiate between a response/dependent variable and a independent/explanatory variable\nUnderstand the relation between the scatterplot and correlation coefficient.\nDescribe the strength and direction of the linear relationship between two quantitative variables using the correlation coefficient, including interpreting whether an association is weak or strong, and positive or negative.\nWrite a model formula for a simple linear regression model with a quantitative predictor.\nInterpret the estimated intercept and slope coefficients in a simple linear regression model with a quantitative predictor\nCompute predicted/fitted values from a linear regression model formula\nInterpret predicted values in the context of the data",
+    "text": "Learning goals\nBy the end of this lesson, you should be able to:\n\nExplain the goal of a confidence interval and why we use samples to estimate an unknown population mean \\(\\mu\\)\nConstruct confidence interval for a population mean \\(\\mu\\) when the population standard deviation (\\(\\sigma\\)) is known and when it is unknown\nDistinguish between correct and incorrect interpretations of confidence intervals\nDescribe how confidence level, variability, and sample size affect the width of an interval\nUse the margin of error to determine the required sample size\nUse a confidence interval to recover the sample information.",
     "crumbs": [
-      "Unit 03-01: Simple Linear Regression: Discovery & Model"
+      "Confidence Interval"
     ]
   },
   {
-    "objectID": "activities/03_04-slr-intro-formalization.html#practice-problems",
-    "href": "activities/03_04-slr-intro-formalization.html#practice-problems",
-    "title": "Unit 03-01: Simple Linear Regression: Discovery & Model",
-    "section": "Practice Problems",
-    "text": "Practice Problems\nPractice problems are essential for your understanding, practice, and exploration. I will post the practice problems for Unit 03 after class (please look for my email!).",
+    "objectID": "activities/Unit-07-01-Confidence-Interval.html#in-class-notes",
+    "href": "activities/Unit-07-01-Confidence-Interval.html#in-class-notes",
+    "title": "Confidence Interval",
+    "section": "In-class Notes",
+    "text": "In-class Notes\n\nLive note-taking during class. Please watch for my email after class for the scanned notes.",
     "crumbs": [
-      "Unit 03-01: Simple Linear Regression: Discovery & Model"
+      "Confidence Interval"
     ]
   },
   {
-    "objectID": "activities/03_04-slr-intro-formalization.html#handouts-activities",
-    "href": "activities/03_04-slr-intro-formalization.html#handouts-activities",
-    "title": "Unit 03-01: Simple Linear Regression: Discovery & Model",
+    "objectID": "activities/Unit-07-01-Confidence-Interval.html#handouts-activities",
+    "href": "activities/Unit-07-01-Confidence-Interval.html#handouts-activities",
+    "title": "Confidence Interval",
     "section": "Handouts & Activities",
-    "text": "Handouts & Activities\n\nDownload the Unit 03-01 handouts from here.",
+    "text": "Handouts & Activities\n\nDownload the Unit 04-01 handouts from here.",
     "crumbs": [
-      "Unit 03-01: Simple Linear Regression: Discovery & Model"
+      "Confidence Interval"
+    ]
+  },
+  {
+    "objectID": "activities/Unit-07-01-Confidence-Interval.html#practice-problems",
+    "href": "activities/Unit-07-01-Confidence-Interval.html#practice-problems",
+    "title": "Confidence Interval",
+    "section": "Practice Problems",
+    "text": "Practice Problems\n\nPractice problems are essential for your understanding, practice, and exploration. I will post the practice problems for Unit 04 after class (please look for my email!).",
+    "crumbs": [
+      "Confidence Interval"
+    ]
+  },
+  {
+    "objectID": "activities/Unit-07-01-Confidence-Interval.html#sampling-distribution-and-central-limit-theorem",
+    "href": "activities/Unit-07-01-Confidence-Interval.html#sampling-distribution-and-central-limit-theorem",
+    "title": "Confidence Interval",
+    "section": "Sampling Distribution and Central Limit Theorem",
+    "text": "Sampling Distribution and Central Limit Theorem\nBefore constructing confidence intervals, let us recall how the sample mean behaves across repeated samples.\n\nCentral Limit Theorem (Big Picture)\n\nIf the population is normal, the sample mean \\(\\bar{Y}\\) is normally distributed for any sample size.\nEven if the population is not normal, the sample mean is approximately normal when the sample size is large (\\(n \\ge 30\\)).\nLarger samples produce a sampling distribution that is more concentrated around the population mean.\n\nThese ideas allow us to use normal-based methods to build confidence intervals.\n\n\n\n\n\n\nNote\n\n\n\nAccording to the lecture notes (Unit 03: 5-7), the sample mean has\n\nMean: \\(E(\\bar{y}) = \\mu\\)\nStandard deviation: \\(\\displaystyle SD(\\bar{y}) = \\frac{\\sigma}{\\sqrt{n}}\\)\n\n\n\n\n\nSampling Distribution Formula\n\n\n\n\n\n\nSampling Distribution of the Sample Mean\n\n\n\nIf \\(Y\\) has population mean \\(\\mu\\) and standard deviation \\(\\sigma\\), then\n\\[\n\\bar{y} \\sim N\\!\\left(\\mu,\\; \\frac{\\sigma}{\\sqrt{n}}\\right)\n\\]\nwhen\n\nthe population is normal, or\nthe sample size is large (\\(n \\ge 30\\)).",
+    "crumbs": [
+      "Confidence Interval"
+    ]
+  },
+  {
+    "objectID": "activities/Unit-07-01-Confidence-Interval.html#what-is-a-confidence-interval",
+    "href": "activities/Unit-07-01-Confidence-Interval.html#what-is-a-confidence-interval",
+    "title": "Confidence Interval",
+    "section": "What is a Confidence Interval?",
+    "text": "What is a Confidence Interval?\nA confidence interval (CI) is a plausible range of values used to estimate an unknown population parameter, such as a population mean \\(\\mu\\), based on data from a random sample.\nRather than reporting a single point estimate (for example, “the average screen time is 3 hours per day”), a confidence interval provides a range of plausible values together with a chosen confidence level (e.g., \\(95\\%\\)).\nA confidence interval reflects the long-run reliability of the method used to construct the interval. If we were to repeatedly take random samples from the same population and compute a confidence interval each time, then approximately \\((1-\\alpha)100\\%\\) of those intervals would capture the true population mean \\(\\mu\\).\nIt is important to remember that-\n\nThe true population parameter \\(\\mu\\) is a fixed but unknown constant. The interval endpoints vary from sample to sample because they depend on random data.\nPlay this interactive simulation of confidence intervals (Rossman/Chance): https://www.rossmanchance.com/applets/ConfSim.html\n\nChange the Statsitc to Proportion to Mean and then click on ``Sample”! Question:\nHow many times did you observe a confidence interval change from a green line to a red line when the interval failed to capture the population mean at 0.5?",
+    "crumbs": [
+      "Confidence Interval"
+    ]
+  },
+  {
+    "objectID": "activities/Unit-07-01-Confidence-Interval.html#common-misinterpretations",
+    "href": "activities/Unit-07-01-Confidence-Interval.html#common-misinterpretations",
+    "title": "Confidence Interval",
+    "section": "Common MISINTERPRETATIONS",
+    "text": "Common MISINTERPRETATIONS\nFor each of the following MISINTERPRETATIONS of a 95% confidence interval (a,b), explain why the statement is a misinterpretation.\n\nMisinterpretation 1: “There is a 95% probability that the population parameter is within (a,b).”\n\nResponse: The population parameter is not random. It is either in the interval or not, so the probability is 1 or 0. The 95% means that 95% of random samples (that are representative of the population of interest) are expected to contain the true population parameter—“95% confidence” is describing confidence in the interval construction process.\n\nMisinterpretation 2: “There is a 5% probability that the population parameter is not within (a,b).”\n\nResponse: This is incorrect for the same reason as the first misinterpretation.\n\nMisinterpretation 3: “There is a 95% chance that the sample estimate in (a,b).”\n\nResponse: The sample estimate is always in the interval by construction.",
+    "crumbs": [
+      "Confidence Interval"
+    ]
+  },
+  {
+    "objectID": "activities/Unit-07-01-Confidence-Interval.html#ci-for-mu-when-sigma-is-known",
+    "href": "activities/Unit-07-01-Confidence-Interval.html#ci-for-mu-when-sigma-is-known",
+    "title": "Confidence Interval",
+    "section": "CI for \\(\\mu\\) when \\(\\sigma\\) is known",
+    "text": "CI for \\(\\mu\\) when \\(\\sigma\\) is known\nWe use this setup when the population standard deviation \\(\\sigma\\) is known and the sampling distribution of \\(\\bar{Y}\\) is normal (either the population is normal or \\(n\\) is large).\n\n\n\n\n\n\nMath Box: CI for \\(\\mu\\) when \\(\\sigma\\) is known\n\n\n\n\n\nIf \\(\\sigma\\) is known, then a \\((1-\\alpha)100\\%\\) confidence interval for the population mean \\(\\mu\\) is\n\\[\n\\bar{y} \\pm z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}.\n\\]\nEquivalently,\n\\[\n\\left(\\bar{y} - z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}, \\;\\; \\bar{y} + z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}\\right).\n\\]",
+    "crumbs": [
+      "Confidence Interval"
+    ]
+  },
+  {
+    "objectID": "activities/Unit-07-01-Confidence-Interval.html#margin-of-error-and-sample-size",
+    "href": "activities/Unit-07-01-Confidence-Interval.html#margin-of-error-and-sample-size",
+    "title": "Confidence Interval",
+    "section": "Margin of Error and Sample Size",
+    "text": "Margin of Error and Sample Size\nThe margin of error is the “plus/minus” part of the confidence interval.\n\n\n\n\n\n\nMath Box: Margin of Error\n\n\n\n\n\nFor a \\((1-\\alpha)100\\%\\) confidence interval for \\(\\mu\\) (when \\(\\sigma\\) is known), the margin of error is\n\\[\n\\text{ME} = z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}.\n\\]\nIf we want the margin of error to equal a specific small number \\(B\\), then we can set\n\\[\nz_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}} = B\n\\]\nand solve for the required sample size:\n\\[\nn = \\left(\\frac{z_{\\alpha/2}\\sigma}{B}\\right)^2.\n\\]",
+    "crumbs": [
+      "Confidence Interval"
+    ]
+  },
+  {
+    "objectID": "activities/Unit-07-01-Confidence-Interval.html#ci-for-mu-when-sigma-is-unknown",
+    "href": "activities/Unit-07-01-Confidence-Interval.html#ci-for-mu-when-sigma-is-unknown",
+    "title": "Confidence Interval",
+    "section": "CI for \\(\\mu\\) when \\(\\sigma\\) is unknown",
+    "text": "CI for \\(\\mu\\) when \\(\\sigma\\) is unknown\nWhen \\(\\sigma\\) is unknown (which is typical), we replace \\(\\sigma\\) with the sample standard deviation \\(s\\), and we use a \\(t\\)-critical value instead of a \\(z\\)-critical value.\n\n\n\n\n\n\nMath Box: CI for \\(\\mu\\) when \\(\\sigma\\) is unknown\n\n\n\n\n\nIf \\(\\sigma\\) is unknown, then a \\((1-\\alpha)100\\%\\) confidence interval for the population mean \\(\\mu\\) is\n\\[\n\\bar{y} \\pm t_{\\alpha/2,\\;n-1}\\frac{s}{\\sqrt{n}},\n\\]\nwhere \\(t_{\\alpha/2,\\;n-1}\\) is the \\(t\\) critical value with \\(n-1\\) degrees of freedom.\nEquivalently,\n\\[\n\\left(\\bar{y} - t_{\\alpha/2,\\;n-1}\\frac{s}{\\sqrt{n}}, \\;\\; \\bar{y} + t_{\\alpha/2,\\;n-1}\\frac{s}{\\sqrt{n}}\\right).\n\\]",
+    "crumbs": [
+      "Confidence Interval"
     ]
   },
   {
@@ -261,13 +331,13 @@
     "href": "pp.html",
     "title": "Practice Problems",
     "section": "",
-    "text": "Practice Problem sets are desinged to help you explore and practice beyond the class examples and exercises. I would highly recommend you to complete the exercises in PPs as you finish them in the class. Make sure, at least to complete all the PPs as soon as we finish one Unit.\n\nPP Unit 01, PP Unit 01 Solution\nPP Unit 02, PP Unit 02 Solution"
+    "text": "Practice Problem sets are desinged to help you explore and practice beyond the class examples and exercises. I would highly recommend you to complete the exercises in PPs as you finish them in the class. Make sure, at least to complete all the PPs as soon as we finish one Unit.\n\nPP Unit 06, PP Unit 06 Solution"
   },
   {
     "objectID": "schedule.html",
     "href": "schedule.html",
     "title": "Course Schedule",
     "section": "",
-    "text": "The (tentative) course schedule below will be filled in throughout the semester. For each day, there will be written on what is due ahead of class time OR whats’ the big thing (like quizzes!). The “Announcements” column is (hopefully) self-explanatory. Any urgent announcements will be made over email (moodle).\n\n\n\n\n\n\nWeek 1\n\n\n\n\n\n\n\n\nMonday\nWednesday\nFriday\nAnnouncements\n\n\n\n\nEnjoy, no class\n02/04: First day of class! Unit 01: Introduction  Before class:  - Read the course syllabus. I will assume that you understand all course policies beginning on Wednesday!  - Familiarize yourself with Canvas/Moodle and the course website\n02/06: Unit 02: Descriptive Statistics\nWelcome (back) to campus!\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 2\n\n\n\n\n\n\n\n\nMonday\nWednesday\nFriday\nAnnouncements\n\n\n\n\n02/09: Unit 02: Descriptive Statistics\n02/11: Descriptive Statistics + Unit 03: Simple Linear Regresion\n02/12: Unit 03: Simple Linear Regresion\n- HW#1 is posted on the Homeworks tab (due Monday, Feb 09, in class)"
+    "text": "The (tentative) course schedule below will be filled in throughout the semester. For each day, there will be written on what is due ahead of class time OR whats’ the big thing (like quizzes!). The “Announcements” column is (hopefully) self-explanatory. Any urgent announcements will be made over email (moodle).\n\n\n\n\n\n\nSample Week 1\n\n\n\n\n\n\n\n\nMonday\nWednesday\nFriday\nAnnouncements\n\n\n\n\nEnjoy, no class\n02/04: First day of class! Unit 01: Introduction  Before class:  - Read the course syllabus. I will assume that you understand all course policies beginning on Wednesday!  - Familiarize yourself with Canvas/Moodle and the course website\n02/06: Unit 02: Descriptive Statistics\nWelcome (back) to campus!\n\n\n\n\n\n\n\n\n\n\n\n\nSample Week 2\n\n\n\n\n\n\n\n\nMonday\nWednesday\nFriday\nAnnouncements\n\n\n\n\n02/09: Unit 02: Descriptive Statistics\n02/11: Descriptive Statistics + Unit 03: Simple Linear Regresion\n02/12: Unit 03: Simple Linear Regresion\n- HW#1 is posted on the Homeworks tab (due Monday, Feb 09, in class)"
   }
 ]

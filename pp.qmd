@@ -8,6 +8,5 @@ sidebar: false
 
 Practice Problem sets are desinged to help you explore and practice beyond the class examples and exercises. I would highly recommend you to complete the exercises in PPs as you finish them in the class. Make sure, at least to complete all the PPs as soon as we finish one Unit. 
 
-- [PP Unit 01](PP/Unit 01 Practice Problems.pdf), [PP Unit 01 Solution](PP/Unit 01 Practice Problems-key.pdf)
-- [PP Unit 02](PP/Unit 02 Practice Problems.pdf),  [PP Unit 02 Solution](PP/Unit 02 Practice Problems-key.pdf)
+- [PP Unit 06](PP/Unit 06 Practice Problems.pdf), [PP Unit 06 Solution](PP/Unit 06 Practice Problems-key.pdf)
 
