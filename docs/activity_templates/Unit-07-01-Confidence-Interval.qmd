@@ -97,7 +97,7 @@ According to the lecture notes (Unit 06: 5-7), the sample mean has
 If $Y$ has population mean $\mu$ and standard deviation $\sigma$, then
 
 $$
-\bar{y} \sim N\!\left(\mu,\; \frac{\sigma}{\sqrt{n}}\right)
+\bar{Y} \sim N\!\left(\mu,\; \frac{\sigma}{\sqrt{n}}\right)
 $$
 
 when
@@ -142,8 +142,7 @@ For each of the following **MISINTERPRETATIONS** of a 95% confidence interval (a
 - Misinterpretation 2: "There is a 5% probability that the population parameter is not within (a,b)."
     - **Response:** This is incorrect for the same reason as the first misinterpretation.
 
-- Misinterpretation 3: "There is a 95% chance that the sample estimate in (a,b)."
-    - **Response:** The sample estimate is always in the interval by construction.
+
 
 
 
