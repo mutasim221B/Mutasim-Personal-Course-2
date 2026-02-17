@@ -280,7 +280,7 @@
     "href": "activities/Unit-07-01-Confidence-Interval.html#common-misinterpretations",
     "title": "Confidence Interval",
     "section": "Common MISINTERPRETATIONS",
-    "text": "Common MISINTERPRETATIONS\nFor each of the following MISINTERPRETATIONS of a 95% confidence interval (a,b), explain why the statement is a misinterpretation.\n\nMisinterpretation 1: “There is a 95% probability that the population parameter is within (a,b).”\n\nResponse: The population parameter is not random. It is either in the interval or not, so the probability is 1 or 0. The 95% means that 95% of random samples (that are representative of the population of interest) are expected to contain the true population parameter—“95% confidence” is describing confidence in the interval construction process.\n\nMisinterpretation 2: “There is a 5% probability that the population parameter is not within (a,b).”\n\nResponse: This is incorrect for the same reason as the first misinterpretation.",
+    "text": "Common MISINTERPRETATIONS\n\nMisinterpretation 1: “There is a 95% probability that the population parameter is within (a,b).”\n\nResponse: The population parameter is not random. It is either in the interval or not, so the probability is 1 or 0. The 95% means that 95% of random samples (that are representative of the population of interest) are expected to contain the true population parameter—“95% confidence” is describing confidence in the interval construction process.\n\nMisinterpretation 2: “There is a 5% probability that the population parameter is not within (a,b).”\n\nResponse: This is incorrect for the same reason as the first misinterpretation.\n\n\nSee the class handouts for more MISINTERPRETATIONS!",
     "crumbs": [
       "Confidence Interval"
     ]
