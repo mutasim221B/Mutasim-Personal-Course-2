@@ -230,7 +230,7 @@
     "href": "activities/Unit-07-01-Confidence-Interval.html#handouts-activities",
     "title": "Confidence Interval",
     "section": "Handouts & Activities",
-    "text": "Handouts & Activities\n\nDownload the Unit 04-01 handouts from here.",
+    "text": "Handouts & Activities\n\nDownload the Unit 07-01 handouts from here.",
     "crumbs": [
       "Confidence Interval"
     ]
@@ -240,7 +240,17 @@
     "href": "activities/Unit-07-01-Confidence-Interval.html#practice-problems",
     "title": "Confidence Interval",
     "section": "Practice Problems",
-    "text": "Practice Problems\n\nPractice problems are essential for your understanding, practice, and exploration. I will post the practice problems for Unit 04 after class (please look for my email!).",
+    "text": "Practice Problems\n\nPractice problems are essential for your understanding, practice, and exploration. I will post the practice problems for Unit 07 after class (please look for my email!).",
+    "crumbs": [
+      "Confidence Interval"
+    ]
+  },
+  {
+    "objectID": "activities/Unit-07-01-Confidence-Interval.html#class-resources",
+    "href": "activities/Unit-07-01-Confidence-Interval.html#class-resources",
+    "title": "Confidence Interval",
+    "section": "Class Resources",
+    "text": "Class Resources\n\nCheck the Class Resources tab of the course website for additional (and valuable!) information and fun activities!",
     "crumbs": [
       "Confidence Interval"
     ]
@@ -250,7 +260,7 @@
     "href": "activities/Unit-07-01-Confidence-Interval.html#sampling-distribution-and-central-limit-theorem",
     "title": "Confidence Interval",
     "section": "Sampling Distribution and Central Limit Theorem",
-    "text": "Sampling Distribution and Central Limit Theorem\nBefore constructing confidence intervals, let us recall how the sample mean behaves across repeated samples.\n\nCentral Limit Theorem (Big Picture)\n\nIf the population is normal, the sample mean \\(\\bar{Y}\\) is normally distributed for any sample size.\nEven if the population is not normal, the sample mean is approximately normal when the sample size is large (\\(n \\ge 30\\)).\nLarger samples produce a sampling distribution that is more concentrated around the population mean.\n\nThese ideas allow us to use normal-based methods to build confidence intervals.\n\n\n\n\n\n\nNote\n\n\n\nAccording to the lecture notes (Unit 03: 5-7), the sample mean has\n\nMean: \\(E(\\bar{y}) = \\mu\\)\nStandard deviation: \\(\\displaystyle SD(\\bar{y}) = \\frac{\\sigma}{\\sqrt{n}}\\)\n\n\n\n\n\nSampling Distribution Formula\n\n\n\n\n\n\nSampling Distribution of the Sample Mean\n\n\n\nIf \\(Y\\) has population mean \\(\\mu\\) and standard deviation \\(\\sigma\\), then\n\\[\n\\bar{y} \\sim N\\!\\left(\\mu,\\; \\frac{\\sigma}{\\sqrt{n}}\\right)\n\\]\nwhen\n\nthe population is normal, or\nthe sample size is large (\\(n \\ge 30\\)).",
+    "text": "Sampling Distribution and Central Limit Theorem\nBefore constructing confidence intervals, let us recall how the sample mean behaves across repeated samples.\n\nCentral Limit Theorem (Big Picture)\n\nIf the population is normal, the sample mean \\(\\bar{y}\\) is normally distributed for any sample size.\nEven if the population is not normal, the sample mean is approximately normal when the sample size is large (\\(n \\ge 30\\)).\n\nThese ideas allow us to use normal-based methods to build confidence intervals.\n\n\n\n\n\n\nNote\n\n\n\nAccording to the lecture notes (Unit 06: 5-7), the sample mean has\n\nMean: \\(E(\\bar{y}) = \\mu\\)\nStandard deviation: \\(\\displaystyle SD(\\bar{y}) = \\frac{\\sigma}{\\sqrt{n}}\\)\n\n\n\n\n\n\n\n\n\nSampling Distribution of the Sample Mean\n\n\n\nIf \\(Y\\) has population mean \\(\\mu\\) and standard deviation \\(\\sigma\\), then\n\\[\n\\bar{y} \\sim N\\!\\left(\\mu,\\; \\frac{\\sigma}{\\sqrt{n}}\\right)\n\\]\nwhen\n\nthe population is normal, or\nthe sample size is large (\\(n \\ge 30\\)).",
     "crumbs": [
       "Confidence Interval"
     ]
@@ -324,7 +334,7 @@
     "href": "assignments.html",
     "title": "Homeworks",
     "section": "",
-    "text": "…due in class!\n\nHW 1, due Monday, 02/02"
+    "text": "…due in class!\n\nHW 6, due Wednesday, 02/25"
   },
   {
     "objectID": "pp.html",

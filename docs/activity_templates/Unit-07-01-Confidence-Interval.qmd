@@ -56,13 +56,16 @@ By the end of this lesson, you should be able to:
 
 ## Handouts & Activities
 
-- Download the [Unit 04-01 handouts](/Resources/Unit_06_01_Handout.pdf) from here.
+- Download the [Unit 07-01 handouts](/Resources/Unit_07_01_Handout.pdf) from here.
 
 
 
 ## Practice Problems
-- Practice problems are essential for your understanding, practice, and exploration. I will post the practice problems for Unit 04 after class (please look for my email!).
+- Practice problems are essential for your understanding, practice, and exploration. I will post the practice problems for Unit 07 after class (please look for my email!).
 
+
+## Class Resources
+- Check the Class Resources tab of the [course website](https://mutasim221b.github.io/Mutasim-Personal-Course-2/) for additional (and valuable!) information and fun activities!
 
 
 # Recall...
@@ -73,23 +76,20 @@ Before constructing confidence intervals, let us recall how the **sample mean** 
 
 ### Central Limit Theorem (Big Picture)
 
-- If the population is **normal**, the sample mean $\bar{Y}$ is normally distributed for any sample size.
+- If the population is **normal**, the sample mean $\bar{y}$ is normally distributed for any sample size.
 - Even if the population is **not normal**, the sample mean is approximately normal when the sample size is large ($n \ge 30$).
-- Larger samples produce a sampling distribution that is **more concentrated** around the population mean.
+
 
 These ideas allow us to use normal-based methods to build confidence intervals.
 
 ::: {.callout-note}
-According to the lecture notes (Unit 03: 5-7), the sample mean has
+According to the lecture notes (Unit 06: 5-7), the sample mean has
 
 - Mean: $E(\bar{y}) = \mu$
 - Standard deviation: $\displaystyle SD(\bar{y}) = \frac{\sigma}{\sqrt{n}}$
 
 :::
 
-
-
-### Sampling Distribution Formula
 
 ::: {.callout-important}
 #### Sampling Distribution of the Sample Mean
