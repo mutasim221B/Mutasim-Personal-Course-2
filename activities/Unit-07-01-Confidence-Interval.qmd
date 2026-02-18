@@ -147,13 +147,13 @@ We use this setup when the population standard deviation $\sigma$ is known and t
 If $\sigma$ is known, then a $(1-\alpha)100\%$ confidence interval for the population mean $\mu$ is
 
 $$
-\bar{y} \pm z_{\alpha/2}\frac{\sigma}{\sqrt{n}}.
+\bar{Y} \pm z_{\alpha/2}\frac{\sigma}{\sqrt{n}}.
 $$
 
 Equivalently,
 
 $$
-\left(\bar{y} - z_{\alpha/2}\frac{\sigma}{\sqrt{n}}, \;\; \bar{y} + z_{\alpha/2}\frac{\sigma}{\sqrt{n}}\right).
+\left(\bar{Y} - z_{\alpha/2}\frac{\sigma}{\sqrt{n}}, \;\; \bar{Y} + z_{\alpha/2}\frac{\sigma}{\sqrt{n}}\right).
 $$
 :::
 
@@ -196,7 +196,7 @@ When $\sigma$ is unknown (which is typical), we replace $\sigma$ with the sample
 If $\sigma$ is unknown, then a $(1-\alpha)100\%$ confidence interval for the population mean $\mu$ is
 
 $$
-\bar{y} \pm t_{\alpha/2,\;n-1}\frac{s}{\sqrt{n}},
+\bar{Y} \pm t_{\alpha/2,\;n-1}\frac{s}{\sqrt{n}},
 $$
 
 where $t_{\alpha/2,\;n-1}$ is the $t$ critical value with $n-1$ degrees of freedom.
@@ -204,7 +204,7 @@ where $t_{\alpha/2,\;n-1}$ is the $t$ critical value with $n-1$ degrees of freed
 Equivalently,
 
 $$
-\left(\bar{y} - t_{\alpha/2,\;n-1}\frac{s}{\sqrt{n}}, \;\; \bar{y} + t_{\alpha/2,\;n-1}\frac{s}{\sqrt{n}}\right).
+\left(\bar{Y} - t_{\alpha/2,\;n-1}\frac{s}{\sqrt{n}}, \;\; \bar{Y} + t_{\alpha/2,\;n-1}\frac{s}{\sqrt{n}}\right).
 $$
 :::
 
