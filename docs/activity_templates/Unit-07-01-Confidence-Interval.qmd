@@ -1,5 +1,5 @@
 ---
-title: "Confidence Interval"
+title: "Confidence Interval- Population Mean"
 subtitle: "Case Western Reserve University: Class Resources"
 format: 
   html:
@@ -79,16 +79,6 @@ Before constructing confidence intervals, let us recall how the **sample mean** 
 - If the population is **normal**, the sample mean $\bar{y}$ is normally distributed for any sample size.
 - Even if the population is **not normal**, the sample mean is approximately normal when the sample size is large ($n \ge 30$).
 
-
-These ideas allow us to use normal-based methods to build confidence intervals.
-
-::: {.callout-note}
-According to the lecture notes (Unit 06: 5-7), the sample mean has
-
-- Mean: $E(\bar{y}) = \mu$
-- Standard deviation: $\displaystyle SD(\bar{y}) = \frac{\sigma}{\sqrt{n}}$
-
-:::
 
 
 ::: {.callout-important}
