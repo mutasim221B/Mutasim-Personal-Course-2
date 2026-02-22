@@ -193,127 +193,91 @@
     "href": "index.html",
     "title": "Introduction to Statistical Modeling",
     "section": "",
-    "text": "Introduction to Statistical Modeling\nCase Western Reserve University, Spring 2026\nStatistics is not just about theories & numbers — it’s about making sense of the world.\n\n\n\n\n\n\n📖 A Thought from H. G. Wells\n\n\n\n\n“Statistical thinking will one day be as necessary for efficient citizenship as the ability to read and write.”\n\n\n\nWelcome to the world of Statistics! In this course, you’ll learn how to analyze data, test research hypotheses, and make predictions in ways that matter.\nInstructor: Md Mutasim Billah  Class meeting times:\n\nSection 03: M/W/F 09:40-10:40am\nSection 04: M/W/F 12:00-01:00pm\n\nInstructor’s drop-in (office) hours:\n\nLocation: My office\nTimes: M/W/F: 01:30-02:30 pm.\nBy Appointment: I’m also happy to meet one-on-one! Shoot me an email and we can arrange it either in-person or over zoom, password: 123456.\nEmail Response Time: I do my best to reply to emails promptly during weekdays.\nPlease note that messages sent after 5:00 pm or on weekends may take longer to receive a response.\n\n\nGTA Office Hours: There is a link to a Google Calendar containing all GTA office hours available at the top of the course Canvas/Moodle page!\n\nThis course website will be updated throughout the semester with new activities, assignments, and announcements, so please bookmark this page if you are enrolled in the course!\nIf you find any typos, bugs, dead links, or have other questions, please email mbillah@macalester.edu"
+    "text": "Introduction to Statistical Modeling\nUniversity of Alabama, Spring 2026\nStatistics is not just about theories & numbers — it’s about making sense of the world.\n\n\n\n\n\n\n📖 A Thought from H. G. Wells\n\n\n\n\n“Statistical thinking will one day be as necessary for efficient citizenship as the ability to read and write.”\n\n\n\nWelcome to the world of Statistics! In this course, you’ll learn how to analyze data, test research hypotheses, and make predictions in ways that matter.\nInstructor: Md Mutasim Billah  Class meeting times:\n\nSection 03: M/W/F 09:40-10:40am\nSection 04: M/W/F 12:00-01:00pm\n\nInstructor’s drop-in (office) hours:\n\nLocation: My office\nTimes: M/W/F: 01:30-02:30 pm.\nBy Appointment: I’m also happy to meet one-on-one! Shoot me an email and we can arrange it either in-person or over zoom, password: 123456.\nEmail Response Time: I do my best to reply to emails promptly during weekdays.\nPlease note that messages sent after 5:00 pm or on weekends may take longer to receive a response.\n\n\nGTA Office Hours: There is a link to a Google Calendar containing all GTA office hours available at the top of the course Canvas/Moodle page!\n\nThis course website will be updated throughout the semester with new activities, assignments, and announcements, so please bookmark this page if you are enrolled in the course!\nIf you find any typos, bugs, dead links, or have other questions, please email mbillah@macalester.edu"
   },
   {
     "objectID": "activities/Unit-07-01-Confidence-Interval.html",
     "href": "activities/Unit-07-01-Confidence-Interval.html",
     "title": "Confidence Interval- Population Mean",
     "section": "",
-    "text": "You can download the .qmd file for this activity here and open in R-studio. The rendered version is posted in the course website (Activities tab). I often experiment with the class activities (and see it in live!) and make updates, but I always post the final version before class starts. To be sure you have the most up-to-date copy, please download it once you’ve settled in before class begins.",
-    "crumbs": [
-      "Confidence Interval- Population Mean"
-    ]
+    "text": "You can download the .qmd file for this activity here and open in R-studio. The rendered version is posted in the course website (Activities tab). I often experiment with the class activities (and see it in live!) and make updates, but I always post the final version before class starts. To be sure you have the most up-to-date copy, please download it once you’ve settled in before class begins."
   },
   {
     "objectID": "activities/Unit-07-01-Confidence-Interval.html#learning-goals",
     "href": "activities/Unit-07-01-Confidence-Interval.html#learning-goals",
     "title": "Confidence Interval- Population Mean",
     "section": "Learning goals",
-    "text": "Learning goals\nBy the end of this lesson, you should be able to:\n\nExplain the goal of a confidence interval and why we use samples to estimate an unknown population mean \\(\\mu\\)\nConstruct confidence interval for a population mean \\(\\mu\\) when the population standard deviation (\\(\\sigma\\)) is known and when it is unknown\nDistinguish between correct and incorrect interpretations of confidence intervals\nDescribe how confidence level, variability, and sample size affect the width of an interval\nUse the margin of error to determine the required sample size\nUse a confidence interval to recover the sample information.",
-    "crumbs": [
-      "Confidence Interval- Population Mean"
-    ]
+    "text": "Learning goals\nBy the end of this lesson, you should be able to:\n\nExplain the goal of a confidence interval and why we use samples to estimate an unknown population mean \\(\\mu\\)\nConstruct confidence interval for a population mean \\(\\mu\\) when the population standard deviation (\\(\\sigma\\)) is known and when it is unknown\nDistinguish between correct and incorrect interpretations of confidence intervals\nDescribe how confidence level, variability, and sample size affect the width of an interval\nUse the margin of error to determine the required sample size\nUse a confidence interval to recover the sample information."
   },
   {
     "objectID": "activities/Unit-07-01-Confidence-Interval.html#in-class-notes",
     "href": "activities/Unit-07-01-Confidence-Interval.html#in-class-notes",
     "title": "Confidence Interval- Population Mean",
     "section": "In-class Notes",
-    "text": "In-class Notes\n\nLive note-taking during class. Please watch for my email after class for the scanned notes.",
-    "crumbs": [
-      "Confidence Interval- Population Mean"
-    ]
+    "text": "In-class Notes\n\nLive note-taking during class. Please watch for my email after class for the scanned notes."
   },
   {
     "objectID": "activities/Unit-07-01-Confidence-Interval.html#handouts-activities",
     "href": "activities/Unit-07-01-Confidence-Interval.html#handouts-activities",
     "title": "Confidence Interval- Population Mean",
     "section": "Handouts & Activities",
-    "text": "Handouts & Activities\n\nDownload the Unit 07-01 handouts from here.",
-    "crumbs": [
-      "Confidence Interval- Population Mean"
-    ]
+    "text": "Handouts & Activities\n\nDownload the Unit 06-02 handouts.\nDownload Unit 06-02 excel."
   },
   {
     "objectID": "activities/Unit-07-01-Confidence-Interval.html#practice-problems",
     "href": "activities/Unit-07-01-Confidence-Interval.html#practice-problems",
     "title": "Confidence Interval- Population Mean",
     "section": "Practice Problems",
-    "text": "Practice Problems\n\nPractice problems are essential for your understanding, practice, and exploration. I will post the practice problems for Unit 07 after class (please look for my email!).",
-    "crumbs": [
-      "Confidence Interval- Population Mean"
-    ]
+    "text": "Practice Problems\n\nPractice problems are essential for your understanding, practice, and exploration. I have posted the practice problems for Unit 06. Please complete these before attempting the HW."
   },
   {
     "objectID": "activities/Unit-07-01-Confidence-Interval.html#class-resources",
     "href": "activities/Unit-07-01-Confidence-Interval.html#class-resources",
     "title": "Confidence Interval- Population Mean",
     "section": "Class Resources",
-    "text": "Class Resources\n\nCheck the Class Resources tab of the course website for additional (and valuable!) information and fun activities!",
-    "crumbs": [
-      "Confidence Interval- Population Mean"
-    ]
+    "text": "Class Resources\n\nCheck the Class Resources tab of the course website for additional (and valuable!) information and fun activities!"
   },
   {
     "objectID": "activities/Unit-07-01-Confidence-Interval.html#sampling-distribution-and-central-limit-theorem",
     "href": "activities/Unit-07-01-Confidence-Interval.html#sampling-distribution-and-central-limit-theorem",
     "title": "Confidence Interval- Population Mean",
     "section": "Sampling Distribution and Central Limit Theorem",
-    "text": "Sampling Distribution and Central Limit Theorem\nBefore constructing confidence intervals, let us recall how the sample mean behaves across repeated samples.\n\nCentral Limit Theorem (Big Picture)\n\nIf the population is normal, the sample mean \\(\\bar{y}\\) is normally distributed for any sample size.\nEven if the population is not normal, the sample mean is approximately normal when the sample size is large (\\(n \\ge 30\\)).\n\n\n\n\n\n\n\nSampling Distribution of the Sample Mean\n\n\n\nIf \\(Y\\) has population mean \\(\\mu\\) and standard deviation \\(\\sigma\\), then\n\\[\n\\bar{Y} \\sim N\\!\\left(\\mu,\\; \\frac{\\sigma}{\\sqrt{n}}\\right)\n\\]\nwhen\n\nthe population is normal, or\nthe sample size is large (\\(n \\ge 30\\)).",
-    "crumbs": [
-      "Confidence Interval- Population Mean"
-    ]
+    "text": "Sampling Distribution and Central Limit Theorem\nBefore constructing confidence intervals, let us recall how the sample mean behaves across repeated samples.\n\nCentral Limit Theorem (Big Picture)\n\nIf the population is normal, the sample mean \\(\\bar{y}\\) is normally distributed for any sample size.\nEven if the population is not normal, the sample mean is approximately normal when the sample size is large (\\(n \\ge 30\\)).\n\n\n\n\n\n\n\nSampling Distribution of the Sample Mean\n\n\n\nIf \\(Y\\) has population mean \\(\\mu\\) and standard deviation \\(\\sigma\\), then\n\\[\n\\bar{Y} \\sim N\\!\\left(\\mu,\\; \\frac{\\sigma}{\\sqrt{n}}\\right)\n\\]\nwhen\n\nthe population is normal, or\nthe sample size is large (\\(n \\ge 30\\))."
   },
   {
     "objectID": "activities/Unit-07-01-Confidence-Interval.html#what-is-a-confidence-interval",
     "href": "activities/Unit-07-01-Confidence-Interval.html#what-is-a-confidence-interval",
     "title": "Confidence Interval- Population Mean",
     "section": "What is a Confidence Interval?",
-    "text": "What is a Confidence Interval?\nA confidence interval (CI) is a plausible range of values used to estimate an unknown population parameter, such as a population mean \\(\\mu\\), based on data from a random sample.\nRather than reporting a single point estimate (for example, “the average screen time is 3 hours per day”), a confidence interval provides a range of plausible values together with a chosen confidence level (e.g., \\(95\\%\\)).\nA confidence interval reflects the long-run reliability of the method used to construct the interval. If we were to repeatedly take random samples from the same population and compute a confidence interval each time, then approximately \\((1-\\alpha)100\\%\\) of those intervals would capture the true population mean \\(\\mu\\).\nIt is important to remember that-\n\nThe true population parameter \\(\\mu\\) is a fixed but unknown constant. The interval endpoints vary from sample to sample because they depend on random data.\nPlay this interactive simulation of confidence intervals (Rossman/Chance): https://www.rossmanchance.com/applets/ConfSim.html\n\nChange the Statsitc to Proportion to Mean and then click on ``Sample”! Question:\nHow many times did you observe a confidence interval change from a green line to a red line when the interval failed to capture the population mean at 0.5?",
-    "crumbs": [
-      "Confidence Interval- Population Mean"
-    ]
+    "text": "What is a Confidence Interval?\nA confidence interval (CI) is a plausible range of values used to estimate an unknown population parameter, such as a population mean \\(\\mu\\), based on data from a random sample.\nRather than reporting a single point estimate (for example, “the average screen time is 3 hours per day”), a confidence interval provides a range of plausible values together with a chosen confidence level (e.g., \\(95\\%\\)).\nA confidence interval reflects the long-run reliability of the method used to construct the interval. If we were to repeatedly take random samples from the same population and compute a confidence interval each time, then approximately \\((1-\\alpha)100\\%\\) of those intervals would capture the true population mean \\(\\mu\\).\nIt is important to remember that-\n\nThe true population parameter \\(\\mu\\) is a fixed but unknown constant. The interval endpoints vary from sample to sample because they depend on random data.\nPlay this interactive simulation of confidence intervals (Rossman/Chance): https://www.rossmanchance.com/applets/ConfSim.html\n\nChange the Statsitc to Proportion to Mean and then click on ``Sample”! Question:\nHow many times did you observe a confidence interval change from a green line to a red line when the interval failed to capture the population mean at 0.5?"
   },
   {
     "objectID": "activities/Unit-07-01-Confidence-Interval.html#common-misinterpretations",
     "href": "activities/Unit-07-01-Confidence-Interval.html#common-misinterpretations",
     "title": "Confidence Interval- Population Mean",
     "section": "Common MISINTERPRETATIONS",
-    "text": "Common MISINTERPRETATIONS\n\nMisinterpretation 1: “There is a 95% probability that the population parameter is within (a,b).”\n\nResponse: The population parameter is not random. It is either in the interval or not, so the probability is 1 or 0. The 95% means that 95% of random samples (that are representative of the population of interest) are expected to contain the true population parameter—“95% confidence” is describing confidence in the interval construction process.\n\nMisinterpretation 2: “There is a 5% probability that the population parameter is not within (a,b).”\n\nResponse: This is incorrect for the same reason as the first misinterpretation.\n\n\nSee the class handouts for more MISINTERPRETATIONS!",
-    "crumbs": [
-      "Confidence Interval- Population Mean"
-    ]
+    "text": "Common MISINTERPRETATIONS\n\nMisinterpretation 1: “There is a 95% probability that the population parameter is within (a,b).”\n\nResponse: The population parameter is not random. It is either in the interval or not, so the probability is 1 or 0. The 95% means that 95% of random samples (that are representative of the population of interest) are expected to contain the true population parameter—“95% confidence” is describing confidence in the interval construction process.\n\nMisinterpretation 2: “There is a 5% probability that the population parameter is not within (a,b).”\n\nResponse: This is incorrect for the same reason as the first misinterpretation.\n\n\nSee the class handouts for more MISINTERPRETATIONS!"
   },
   {
     "objectID": "activities/Unit-07-01-Confidence-Interval.html#ci-for-mu-when-sigma-is-known",
     "href": "activities/Unit-07-01-Confidence-Interval.html#ci-for-mu-when-sigma-is-known",
     "title": "Confidence Interval- Population Mean",
     "section": "CI for \\(\\mu\\) when \\(\\sigma\\) is known",
-    "text": "CI for \\(\\mu\\) when \\(\\sigma\\) is known\nWe use this setup when the population standard deviation \\(\\sigma\\) is known and the sampling distribution of \\(\\bar{Y}\\) is normal (either the population is normal or \\(n\\) is large).\n\n\n\n\n\n\nMath Box: CI for \\(\\mu\\) when \\(\\sigma\\) is known\n\n\n\n\n\nIf \\(\\sigma\\) is known, then a \\((1-\\alpha)100\\%\\) confidence interval for the population mean \\(\\mu\\) is\n\\[\n\\bar{Y} \\pm z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}.\n\\]\nEquivalently,\n\\[\n\\left(\\bar{Y} - z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}, \\;\\; \\bar{Y} + z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}\\right).\n\\]",
-    "crumbs": [
-      "Confidence Interval- Population Mean"
-    ]
+    "text": "CI for \\(\\mu\\) when \\(\\sigma\\) is known\nWe use this setup when the population standard deviation \\(\\sigma\\) is known and the sampling distribution of \\(\\bar{Y}\\) is normal (either the population is normal or \\(n\\) is large).\n\n\n\n\n\n\nMath Box: CI for \\(\\mu\\) when \\(\\sigma\\) is known\n\n\n\n\n\nIf \\(\\sigma\\) is known, then a \\((1-\\alpha)100\\%\\) confidence interval for the population mean \\(\\mu\\) is\n\\[\n\\bar{Y} \\pm z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}.\n\\]\nEquivalently,\n\\[\n\\left(\\bar{Y} - z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}, \\;\\; \\bar{Y} + z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}\\right).\n\\]"
   },
   {
     "objectID": "activities/Unit-07-01-Confidence-Interval.html#margin-of-error-and-sample-size",
     "href": "activities/Unit-07-01-Confidence-Interval.html#margin-of-error-and-sample-size",
     "title": "Confidence Interval- Population Mean",
     "section": "Margin of Error and Sample Size",
-    "text": "Margin of Error and Sample Size\nThe margin of error is the “plus/minus” part of the confidence interval.\n\n\n\n\n\n\nMath Box: Margin of Error\n\n\n\n\n\nFor a \\((1-\\alpha)100\\%\\) confidence interval for \\(\\mu\\) (when \\(\\sigma\\) is known), the margin of error is\n\\[\n\\text{ME} = z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}.\n\\]\nIf we want the margin of error to equal a specific small number \\(B\\), then we can set\n\\[\nz_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}} = B\n\\]\nand solve for the required sample size:\n\\[\nn = \\left(\\frac{z_{\\alpha/2}\\sigma}{B}\\right)^2.\n\\]",
-    "crumbs": [
-      "Confidence Interval- Population Mean"
-    ]
+    "text": "Margin of Error and Sample Size\nThe margin of error is the “plus/minus” part of the confidence interval.\n\n\n\n\n\n\nMath Box: Margin of Error\n\n\n\n\n\nFor a \\((1-\\alpha)100\\%\\) confidence interval for \\(\\mu\\) (when \\(\\sigma\\) is known), the margin of error is\n\\[\n\\text{ME} = z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}.\n\\]\nIf we want the margin of error to equal a specific small number \\(B\\), then we can set\n\\[\nz_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}} = B\n\\]\nand solve for the required sample size:\n\\[\nn = \\left(\\frac{z_{\\alpha/2}\\sigma}{B}\\right)^2.\n\\]"
   },
   {
     "objectID": "activities/Unit-07-01-Confidence-Interval.html#ci-for-mu-when-sigma-is-unknown",
     "href": "activities/Unit-07-01-Confidence-Interval.html#ci-for-mu-when-sigma-is-unknown",
     "title": "Confidence Interval- Population Mean",
     "section": "CI for \\(\\mu\\) when \\(\\sigma\\) is unknown",
-    "text": "CI for \\(\\mu\\) when \\(\\sigma\\) is unknown\nWhen \\(\\sigma\\) is unknown (which is typical), we replace \\(\\sigma\\) with the sample standard deviation \\(s\\), and we use a \\(t\\)-critical value instead of a \\(z\\)-critical value.\n\n\n\n\n\n\nMath Box: CI for \\(\\mu\\) when \\(\\sigma\\) is unknown\n\n\n\n\n\nIf \\(\\sigma\\) is unknown, then a \\((1-\\alpha)100\\%\\) confidence interval for the population mean \\(\\mu\\) is\n\\[\n\\bar{Y} \\pm t_{\\alpha/2,\\;n-1}\\frac{s}{\\sqrt{n}},\n\\]\nwhere \\(t_{\\alpha/2,\\;n-1}\\) is the \\(t\\) critical value with \\(n-1\\) degrees of freedom.\nEquivalently,\n\\[\n\\left(\\bar{Y} - t_{\\alpha/2,\\;n-1}\\frac{s}{\\sqrt{n}}, \\;\\; \\bar{Y} + t_{\\alpha/2,\\;n-1}\\frac{s}{\\sqrt{n}}\\right).\n\\]",
-    "crumbs": [
-      "Confidence Interval- Population Mean"
-    ]
+    "text": "CI for \\(\\mu\\) when \\(\\sigma\\) is unknown\nWhen \\(\\sigma\\) is unknown (which is typical), we replace \\(\\sigma\\) with the sample standard deviation \\(s\\), and we use a \\(t\\)-critical value instead of a \\(z\\)-critical value.\n\n\n\n\n\n\nMath Box: CI for \\(\\mu\\) when \\(\\sigma\\) is unknown\n\n\n\n\n\nIf \\(\\sigma\\) is unknown, then a \\((1-\\alpha)100\\%\\) confidence interval for the population mean \\(\\mu\\) is\n\\[\n\\bar{Y} \\pm t_{\\alpha/2,\\;n-1}\\frac{s}{\\sqrt{n}},\n\\]\nwhere \\(t_{\\alpha/2,\\;n-1}\\) is the \\(t\\) critical value with \\(n-1\\) degrees of freedom.\nEquivalently,\n\\[\n\\left(\\bar{Y} - t_{\\alpha/2,\\;n-1}\\frac{s}{\\sqrt{n}}, \\;\\; \\bar{Y} + t_{\\alpha/2,\\;n-1}\\frac{s}{\\sqrt{n}}\\right).\n\\]"
   },
   {
     "objectID": "R_Resources.html",
@@ -330,11 +294,71 @@
     "text": "RStudio cheatsheets\nMarkdown (Quarto) basics, and Quarto/RStudio tutorial\nGoogle it! If you have a question about R, someone else probably asked it. Add “R tidyverse” to your search term.\nExample: scatterplot R tidyverse\nNote about ChatGPT for code: Please avoid using ChatGPT as a first resort for R code. It often suggests overly wordy or unfamiliar approaches. Our goal is for you to understand the code you write; sticking to tools and syntax we use in class will support your learning best.\nMore details will be shared soon as we begin the project."
   },
   {
+    "objectID": "activities/Unit-06-02-Standard-Normal.html",
+    "href": "activities/Unit-06-02-Standard-Normal.html",
+    "title": "Standard Normal Distribution",
+    "section": "",
+    "text": "You can download the .qmd file for this activity here and open in R-studio. The rendered version is posted in the course website (Activities tab). I often experiment with the class activities (and see it in live!) and make updates, but I always post the final version before class starts. To be sure you have the most up-to-date copy, please download it once you’ve settled in before class begins.",
+    "crumbs": [
+      "Standard Normal Distribution"
+    ]
+  },
+  {
+    "objectID": "activities/Unit-06-02-Standard-Normal.html#handouts-activities",
+    "href": "activities/Unit-06-02-Standard-Normal.html#handouts-activities",
+    "title": "Standard Normal Distribution",
+    "section": "Handouts & Activities",
+    "text": "Handouts & Activities\n\nDownload Unit 06-02 handouts\nDownload Unit 06-02 excel\nDownload Normal-Table",
+    "crumbs": [
+      "Standard Normal Distribution"
+    ]
+  },
+  {
+    "objectID": "activities/Unit-06-02-Standard-Normal.html#practice-problems",
+    "href": "activities/Unit-06-02-Standard-Normal.html#practice-problems",
+    "title": "Standard Normal Distribution",
+    "section": "Practice Problems",
+    "text": "Practice Problems\n\nPractice problems are essential for your understanding, practice, and exploration. I have posted the practice problems for Unit 06. Please complete these before attempting the HW.",
+    "crumbs": [
+      "Standard Normal Distribution"
+    ]
+  },
+  {
+    "objectID": "activities/Unit-06-02-Standard-Normal.html#class-resources",
+    "href": "activities/Unit-06-02-Standard-Normal.html#class-resources",
+    "title": "Standard Normal Distribution",
+    "section": "Class Resources",
+    "text": "Class Resources\n\nCheck the Class Resources tab of the course website for additional (and valuable!) information and fun activities!",
+    "crumbs": [
+      "Standard Normal Distribution"
+    ]
+  },
+  {
+    "objectID": "activities/Unit-06-02-Standard-Normal.html#the-normal-distribution-bell-curve",
+    "href": "activities/Unit-06-02-Standard-Normal.html#the-normal-distribution-bell-curve",
+    "title": "Standard Normal Distribution",
+    "section": "The Normal Distribution (Bell Curve)",
+    "text": "The Normal Distribution (Bell Curve)\nThe Normal Distribution (often called the bell curve) is one of the most important continuous random variable models.\nIf \\(X\\) is normally distributed, its support is \\((-\\infty, \\infty)\\). The curve is centered at its mean \\(\\mu\\), and its spread depends on the standard deviation \\(\\sigma\\).\n\n\n\n\n\n\n\nMath Box: Normal Distribution\n\n\n\n\n\n\\[\n\\text{If } X \\sim N(\\mu,\\sigma), \\text{ then}\n\\quad\nf(x) \\;=\\; \\frac{1}{\\sqrt{2\\pi}\\,\\sigma}\n\\, e^{-\\frac{1}{2}\\left(\\frac{x-\\mu}{\\sigma}\\right)^2},\n\\qquad -\\infty &lt; x &lt; \\infty .\n\\]\n\n\n\n\nExample 1\n\n\n\n\n\n\n\nExample 2: Emperical Rule- Giant!\nSuppose heights of adult American men are approximately normally distributed, and you are about to meet a man whose height is \\(10\\sigma\\) (10 standard deviations) above the mean. How tall would you expect this person to be? Someone who is “pretty tall” (maybe 6.5 feet), or a giant (the tallest person who has ever lived)?\nAssume adult American men’s heights are approximately normal with:\n\nMean: \\(\\mu = 70\\) inches\n\nStandard deviation: \\(\\sigma = 4\\) inches\n\nA height that is \\(10\\sigma\\) above the mean is:\n\\[\n\\mu + 10\\sigma\n= 70 + 10(4)\n= 110 \\text{ inches}.\n\\]\nConvert inches to feet/inches:\n\\[\n110 \\text{ inches} = 9 \\text{ ft } 2 \\text{ in}.\n\\]\nInterpretation: A person who is \\(10\\sigma\\) above the mean would be about \\(9'2''\\), which is extremely rare. For context, the tallest man who ever lived was about \\(8'11''\\)!",
+    "crumbs": [
+      "Standard Normal Distribution"
+    ]
+  },
+  {
+    "objectID": "activities/Unit-06-02-Standard-Normal.html#z-score",
+    "href": "activities/Unit-06-02-Standard-Normal.html#z-score",
+    "title": "Standard Normal Distribution",
+    "section": "“Z-score”",
+    "text": "“Z-score”\n\nTells us how many standard deviations a value is away from the mean.\nIf a z-score is positive, it is larger than the mean.\nIf a z-score is negative, it is smaller than the mean.\n\n\\[\nZ = \\frac{X - \\mu}{\\sigma}\n\\]",
+    "crumbs": [
+      "Standard Normal Distribution"
+    ]
+  },
+  {
     "objectID": "assignments.html",
     "href": "assignments.html",
     "title": "Homeworks",
     "section": "",
-    "text": "…due in class!\n\nHW 6, due Wednesday, 02/25"
+    "text": "…submit on Canvas!\n\nHW 6, due Wednesday, 03/04"
   },
   {
     "objectID": "pp.html",
@@ -348,6 +372,6 @@
     "href": "schedule.html",
     "title": "Course Schedule",
     "section": "",
-    "text": "The (tentative) course schedule below will be filled in throughout the semester. Any urgent announcements will be made over class email list.\n\n\n\n\n\n\nWeek 8\n\n\n\n\n\n\n\n\nMonday\nWednesday\nFriday\nAnnouncements\n\n\n\n\n02/16: Unit 06: Central Limit Theorem\n02/18: Unit 06: Central Limit Theorem\n02/20: Unit 07: Confidence Interval\n-PP Unit 06 is posted with solution on the Practice Problems - HW#6 is posted on the Homeworks tab (due Wednesday, Feb 25, in class)"
+    "text": "The (tentative) course schedule below will be filled in throughout the semester. Any urgent announcements will be made over class email list.\n\n\n\n\n\n\nWeek 8\n\n\n\n\n\n\n\n\nTuesday\nThursday\nAnnouncements\n\n\n\n\n02/24: Unit 06-01: Normal Distribution\n02/26: Unit 06-02: Standard Normal Distribution\n- PP Unit 06 is posted with solution on the Practice Problems  - HW#6 is posted on the Homeworks tab (due Wednesday, March 04, in canvas)"
   }
 ]

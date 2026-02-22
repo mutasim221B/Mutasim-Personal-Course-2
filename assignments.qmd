@@ -6,7 +6,7 @@ sidebar: false
 
 
 
-**...due in class!**
+**...submit on Canvas!**
 
-- [HW 6](assignments/HW-6.pdf), due Wednesday, 02/25
+- [HW 6](assignments/HW-6.pdf), due Wednesday, 03/04
 

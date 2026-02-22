@@ -1,0 +1,171 @@
+---
+title: "Standard Normal Distribution"
+subtitle: "University of Alabama: Class Resources"
+format: 
+  html:
+    embed-resources: true
+    toc: true
+---
+
+
+You can download the .qmd file for this activity [here](../activity_templates/Unit-06-02-Standard-Normal.qmd) and open in R-studio. The rendered version is posted in the [course website](https://mutasim221b.github.io/Mutasim-Personal-Course-2/) (Activities tab). I often experiment with the class activities (and see it in live!) and make updates, but I always post the final version before class starts. To be sure you have the most up-to-date copy, please download it once you’ve settled in before class begins.
+
+
+
+
+
+
+```{r setup}
+#| include: false
+knitr::opts_chunk$set(
+  collapse = TRUE, 
+  warning = FALSE,
+  message = FALSE,
+  error = TRUE,
+  fig.height = 2.75, 
+  fig.width = 4.25,
+  fig.env = 'figure',
+  fig.pos = 'h',
+  fig.align = 'center')
+```
+
+
+
+
+# Learning Objectives
+
+By the end of this lesson, you should be able to:
+
+- Describe the key **properties of the standard normal distribution**.
+
+- Interpret a **z-score** as the number of standard deviations an observation is from the mean.
+
+- Transform a normal random variable into a **standard normal variable** using standardization.
+
+- Convert a standard normal value back into the **original measurement scale**.
+
+- Compute probabilities using the standard normal distribution.
+
+- Use z-scores to compare how **unusual** different values are across different contexts.
+
+
+
+
+
+# Resources
+
+
+## Handouts & Activities
+
+- Download [Unit 06-02 handouts](/Resources/Unit_06_02_Standard_Normal.pdf)
+- Download [Unit 06-02 excel](/Resources/Unit 06-02 Excel_blank.xlsx)
+- Download [Normal-Table](/Resources/Normal-Table.pdf)
+
+
+
+## Practice Problems
+- Practice problems are essential for your understanding, practice, and exploration. I have posted the practice problems for Unit 06. Please complete these before attempting the HW.
+
+
+## Class Resources
+- Check the Class Resources tab of the [course website](https://mutasim221b.github.io/Mutasim-Personal-Course-2/) for additional (and valuable!) information and fun activities!
+
+
+# Recall...
+
+## The Normal Distribution (Bell Curve)
+
+The **Normal Distribution** (often called the *bell curve*) is one of the most important continuous random variable models.
+
+If $X$ is normally distributed, its support is $(-\infty, \infty)$. The curve is centered at its mean $\mu$, and its spread depends on the standard deviation $\sigma$.
+
+
+![](/images/Normal-1.png){width=75%}
+
+
+
+
+::: {.callout-note collapse="true"}
+## Math Box: Normal Distribution
+
+$$
+\text{If } X \sim N(\mu,\sigma), \text{ then}
+\quad
+f(x) \;=\; \frac{1}{\sqrt{2\pi}\,\sigma}
+\, e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2},
+\qquad -\infty < x < \infty .
+$$
+:::
+
+### Example 1
+\
+
+![](/images/Normal-2.png){width=75%}
+
+\
+
+### Example 2: Emperical Rule- Giant!
+
+
+Suppose heights of adult American men are approximately normally distributed, and you are about to meet a man whose height is $10\sigma$ (10 standard deviations) above the mean. How tall would you expect this person to be? Someone who is “pretty tall” (maybe 6.5 feet), or a giant (the tallest person who has ever lived)?
+
+Assume adult American men’s heights are approximately normal with:
+
+- Mean: $\mu = 70$ inches  
+- Standard deviation: $\sigma = 4$ inches 
+
+A height that is $10\sigma$ above the mean is:
+
+$$
+\mu + 10\sigma
+= 70 + 10(4)
+= 110 \text{ inches}.
+$$
+
+Convert inches to feet/inches:
+
+$$
+110 \text{ inches} = 9 \text{ ft } 2 \text{ in}.
+$$
+
+**Interpretation:** A person who is $10\sigma$ above the mean would be about $9'2''$, which is extremely rare. For context, the tallest man who ever lived was about $8'11''$!
+
+::: {.columns}
+
+::: {.column width="50%"}
+![](/images/Normal-3.png){width=100%}
+:::
+
+::: {.column width="50%"}
+![](/images/Giant.png){width=50%}
+:::
+
+:::
+
+
+# Standard Normal Distribution
+
+There are infinitely many normal curves since any real number is a possible choice for the mean $\mu$ and any positive real number is a choice for the standard deviation $\sigma$. But there is a very special normal curve where $\mu = 0$ and $\sigma = 1$. We call it the **standard normal curve**, and we use $Z$ instead of $X$.
+
+::: {.callout-note collapse="true"}
+## Math Box: Normal Distribution
+$$
+Z \sim N(\mu = 0,\ \sigma = 1)
+$$
+
+$$
+f(z) = \frac{1}{\sqrt{2\pi}}\,e^{-z^2/2},
+\qquad -\infty < z < \infty
+$$
+:::
+
+## “Z-score”
+
+- Tells us how many **standard deviations** a value is away from the mean.
+
+- If a z-score is **positive**, it is larger than the mean.  
+  If a z-score is **negative**, it is smaller than the mean.
+
+$$
+Z = \frac{X - \mu}{\sigma}
+$$

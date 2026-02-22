@@ -56,12 +56,13 @@ By the end of this lesson, you should be able to:
 
 ## Handouts & Activities
 
-- Download the [Unit 07-01 handouts](/Resources/Unit_07_01_Handout.pdf) from here.
+- Download the [Unit 06-02 handouts](/Resources/Unit_06_02_Standard_Normal.pdf).
+- Download [Unit 06-02 excel](Unit 06-02 Excel_blank.xlsx).
 
 
 
 ## Practice Problems
-- Practice problems are essential for your understanding, practice, and exploration. I will post the practice problems for Unit 07 after class (please look for my email!).
+- Practice problems are essential for your understanding, practice, and exploration. I have posted the practice problems for Unit 06. Please complete these before attempting the HW.
 
 
 ## Class Resources

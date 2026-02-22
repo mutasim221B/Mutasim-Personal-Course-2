@@ -8,6 +8,7 @@ project:
     - "!working/"
   post-render: "cp -r activities docs/activity_templates" # adds activity qmd as downloadable template
   resources:
+    - images/** 
     - "data/*.csv"
     # - "activity_templates/*.qmd"
     - "assignments/*.pdf"
@@ -42,7 +43,8 @@ website:
     - id: activities
       title: "Class Reources"
       contents:
-          - "activities/Unit-07-01-Confidence-Interval.qmd"
+          - "activities/Unit-06-02-Standard-Normal.qmd"
+
 
 
   
