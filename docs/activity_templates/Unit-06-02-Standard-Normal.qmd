@@ -7,6 +7,7 @@ format:
     toc: true
 ---
 
+
 You can download the .qmd file for this activity [here](../activity_templates/Unit-06-02-Standard-Normal.qmd) and open in R-studio. The rendered version is posted in the [course website](https://mutasim221b.github.io/Mutasim-Personal-Course-2/) (Activities tab). I often experiment with the class activities (and see it in live!) and make updates, but I always post the final version before class starts. To be sure you have the most up-to-date copy, please download it once you’ve settled in before class begins.
 
 
