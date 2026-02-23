@@ -324,21 +324,11 @@
     ]
   },
   {
-    "objectID": "activities/Unit-06-02-Standard-Normal.html#class-resources",
-    "href": "activities/Unit-06-02-Standard-Normal.html#class-resources",
-    "title": "Standard Normal Distribution",
-    "section": "Class Resources",
-    "text": "Class Resources\n\nCheck the Class Resources tab of the course website for additional (and valuable!) information and fun activities!",
-    "crumbs": [
-      "Standard Normal Distribution"
-    ]
-  },
-  {
     "objectID": "activities/Unit-06-02-Standard-Normal.html#the-normal-distribution-bell-curve",
     "href": "activities/Unit-06-02-Standard-Normal.html#the-normal-distribution-bell-curve",
     "title": "Standard Normal Distribution",
     "section": "The Normal Distribution (Bell Curve)",
-    "text": "The Normal Distribution (Bell Curve)\nThe Normal Distribution (often called the bell curve) is one of the most important continuous random variable models.\nIf \\(X\\) is normally distributed, its support is \\((-\\infty, \\infty)\\). The curve is centered at its mean \\(\\mu\\), and its spread depends on the standard deviation \\(\\sigma\\).\n\n\n\n\n\n\n\nMath Box: Normal Distribution\n\n\n\n\n\n\\[\n\\text{If } X \\sim N(\\mu,\\sigma), \\text{ then}\n\\quad\nf(x) \\;=\\; \\frac{1}{\\sqrt{2\\pi}\\,\\sigma}\n\\, e^{-\\frac{1}{2}\\left(\\frac{x-\\mu}{\\sigma}\\right)^2},\n\\qquad -\\infty &lt; x &lt; \\infty .\n\\]\n\n\n\n\nExample 1\n\n\n\n\n\n\n\nExample 2: Emperical Rule- Giant!\nSuppose heights of adult American men are approximately normally distributed, and you are about to meet a man whose height is \\(10\\sigma\\) (10 standard deviations) above the mean. How tall would you expect this person to be? Someone who is “pretty tall” (maybe 6.5 feet), or a giant (the tallest person who has ever lived)?\nAssume adult American men’s heights are approximately normal with:\n\nMean: \\(\\mu = 70\\) inches\n\nStandard deviation: \\(\\sigma = 4\\) inches\n\nA height that is \\(10\\sigma\\) above the mean is:\n\\[\n\\mu + 10\\sigma\n= 70 + 10(4)\n= 110 \\text{ inches}.\n\\]\nConvert inches to feet/inches:\n\\[\n110 \\text{ inches} = 9 \\text{ ft } 2 \\text{ in}.\n\\]\nInterpretation: A person who is \\(10\\sigma\\) above the mean would be about \\(9'2''\\), which is extremely rare. For context, the tallest man who ever lived was about \\(8'11''\\)!",
+    "text": "The Normal Distribution (Bell Curve)\nThe Normal Distribution (often called the bell curve) is one of the most important continuous random variable models.\nIf \\(X\\) is normally distributed, its support is \\((-\\infty, \\infty)\\). The curve is centered at its mean \\(\\mu\\), and its spread depends on the standard deviation \\(\\sigma\\).\n\n\n\n\n\n\n\nMath Box: Normal Distribution\n\n\n\n\n\n\\[\n\\text{If } X \\sim N(\\mu,\\sigma), \\text{ then}\n\\quad\nf(x) \\;=\\; \\frac{1}{\\sqrt{2\\pi}\\,\\sigma}\n\\, e^{-\\frac{1}{2}\\left(\\frac{x-\\mu}{\\sigma}\\right)^2},\n\\qquad -\\infty &lt; x &lt; \\infty .\n\\]\n\n\n\n\nExample 1\n\n\n\nExample 2: Emperical Rule- Giant!\nSuppose heights of adult American men are approximately normally distributed, and you are about to meet a man whose height is \\(10\\sigma\\) (10 standard deviations) above the mean. How tall would you expect this person to be? Someone who is “pretty tall” (maybe 6.5 feet), or a giant (the tallest person who has ever lived)?\nAssume adult American men’s heights are approximately normal with:\n\nMean: \\(\\mu = 70\\) inches\n\nStandard deviation: \\(\\sigma = 4\\) inches\n\nA height that is \\(10\\sigma\\) above the mean is:\n\\[\n\\mu + 10\\sigma\n= 70 + 10(4)\n= 110 \\text{ inches}.\n\\]\nConvert inches to feet/inches:\n\\[\n110 \\text{ inches} = 9 \\text{ ft } 2 \\text{ in}.\n\\]\nInterpretation: A person who is \\(10\\sigma\\) above the mean would be about \\(9'2''\\), which is extremely rare. For context, the tallest man who ever lived was about \\(8'11''\\)!",
     "crumbs": [
       "Standard Normal Distribution"
     ]

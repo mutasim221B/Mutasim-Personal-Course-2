@@ -7,7 +7,6 @@ format:
     toc: true
 ---
 
-
 You can download the .qmd file for this activity [here](../activity_templates/Unit-06-02-Standard-Normal.qmd) and open in R-studio. The rendered version is posted in the [course website](https://mutasim221b.github.io/Mutasim-Personal-Course-2/) (Activities tab). I often experiment with the class activities (and see it in live!) and make updates, but I always post the final version before class starts. To be sure you have the most up-to-date copy, please download it once you’ve settled in before class begins.
 
 
@@ -64,11 +63,8 @@ By the end of this lesson, you should be able to:
 
 
 ## Practice Problems
-- Practice problems are essential for your understanding, practice, and exploration. I have posted the practice problems for Unit 06. Please complete these before attempting the HW.
+- Practice problems are essential for your understanding, practice, and exploration. I have posted the practice problems for [Unit 06](https://mutasim221b.github.io/Mutasim-Personal-Course-2/pp.html). Please complete these before attempting the HW.
 
-
-## Class Resources
-- Check the Class Resources tab of the [course website](https://mutasim221b.github.io/Mutasim-Personal-Course-2/) for additional (and valuable!) information and fun activities!
 
 
 # Recall...
@@ -80,7 +76,7 @@ The **Normal Distribution** (often called the *bell curve*) is one of the most i
 If $X$ is normally distributed, its support is $(-\infty, \infty)$. The curve is centered at its mean $\mu$, and its spread depends on the standard deviation $\sigma$.
 
 
-![](/images/Normal-1.png){width=75%}
+![](/images/Normal-1.png){width="75%"}
 
 
 
@@ -97,12 +93,15 @@ f(x) \;=\; \frac{1}{\sqrt{2\pi}\,\sigma}
 $$
 :::
 
+
 ### Example 1
-\
 
-![](/images/Normal-2.png){width=75%}
 
-\
+![](/images/Normal-2.png){width="75%"}
+
+
+
+
 
 ### Example 2: Emperical Rule- Giant!
 
@@ -133,11 +132,11 @@ $$
 ::: {.columns}
 
 ::: {.column width="50%"}
-![](/images/Normal-3.png){width=100%}
+![](/images/Normal-3.png){width="100%"}
 :::
 
 ::: {.column width="50%"}
-![](/images/Giant.png){width=50%}
+![](/images/Giant.png){width="50%"}
 :::
 
 :::
@@ -158,6 +157,7 @@ f(z) = \frac{1}{\sqrt{2\pi}}\,e^{-z^2/2},
 \qquad -\infty < z < \infty
 $$
 :::
+
 
 ## “Z-score”
 
