@@ -16,7 +16,7 @@ project:
     - .nojekyll
 
 website:
-  title: "STAT"
+  title: "ST 260"
   site-url: https://mutasim221B.github.io/Mutasim-Personal-Course-2/
   repo-url:  https://github.com/mutasim221b/Mutasim-Personal-Course-2
   navbar:

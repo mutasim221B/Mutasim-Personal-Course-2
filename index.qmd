@@ -3,7 +3,7 @@ title: ""
 sidebar: false
 ---
 
-# Introduction to Statistical Modeling  
+# Introduction to Statistical Methods  
 University of Alabama, Spring 2026 
 
 Statistics is not just about theories & numbers — it’s about making sense of the world.  

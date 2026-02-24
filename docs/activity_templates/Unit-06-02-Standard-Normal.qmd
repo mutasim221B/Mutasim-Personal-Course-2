@@ -37,15 +37,10 @@ knitr::opts_chunk$set(
 By the end of this lesson, you should be able to:
 
 - Describe the key **properties of the standard normal distribution**.
-
 - Interpret a **z-score** as the number of standard deviations an observation is from the mean.
-
 - Transform a normal random variable into a **standard normal variable** using standardization.
-
 - Convert a standard normal value back into the **original measurement scale**.
-
 - Compute probabilities using the standard normal distribution.
-
 - Use z-scores to compare how **unusual** different values are across different contexts.
 
 

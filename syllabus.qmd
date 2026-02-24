@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Statistical Modeling"
+title: "Introduction to Statistical Methods"
 subtitle: "University of Alabama, Spring 2026"
 format: 
   html:
@@ -10,7 +10,7 @@ format:
 -   **Section 03**: M/W/F 09:40-10:40am
 -   **Section 04**: M/W/F 12:00-01:00pm
 
-**Welcome to Introduction to Statistical Modeling!** Whether in life or research, we’re often interested in relationships between 2+ variables. For example, how is one’s commute time to class related to their distance from campus and mode of transportation? Or, how is voter participation related to a person’s age and political affiliation? **Statistical modeling** is the art and science of turning data into information about such relationships of interest.
+**Welcome to Introduction to Statistical Methods!** Whether in life or research, we’re often interested in relationships between 2+ variables. For example, how is one’s commute time to class related to their distance from campus and mode of transportation? Or, how is voter participation related to a person’s age and political affiliation? **Statistical modeling** is the art and science of turning data into information about such relationships of interest.
 
 Being able to **summarize**, **interpret**, and **communicate** about data are crucial for navigating today's information landscape, and these are precisely the skills that we'll build in this class. Throughout the semester, we'll study the fundamental methods that statisticians use to extract knowledge from data, emphasizing statistical literacy & intuition, real data applications, and modern computing over memorizing facts and formulas.
 
