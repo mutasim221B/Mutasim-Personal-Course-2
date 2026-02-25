@@ -6,7 +6,7 @@ sidebar: false
 
 
 
-**...submit on Canvas!**
+**...submit on Blackboard!**
 
 - [HW 6](assignments/HW-06.pdf), due Wednesday, 03/04
 
