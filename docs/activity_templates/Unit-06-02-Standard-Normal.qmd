@@ -52,9 +52,10 @@ By the end of this lesson, you should be able to:
 
 ## Handouts & Activities
 
-- Download [Unit 06-02 handouts](/Resources/Unit_06_02_Standard_Normal.pdf)
-- Download [Unit 06-02 excel](/Resources/Unit 06-02 Excel_blank.xlsx)
+- Download [Unit 06-02 Handouts](/Resources/Unit_06_02_Standard_Normal.pdf)
 - Download [Normal-Table](/Resources/Normal-Table.pdf)
+- Download [Unit 06-02 Excel](/Resources/Unit 06-02 Excel_blank.xlsx) and [Unit 06-02 Excel Solution](/Resources/Unit 06-02 Excel_SOL.xlsx) 
+
 
 
 
