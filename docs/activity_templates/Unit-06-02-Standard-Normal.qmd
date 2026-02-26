@@ -38,11 +38,11 @@ By the end of this lesson, you should be able to:
 
 - Describe the key **properties of the standard normal distribution**.
 - Interpret a **z-score** as the number of standard deviations an observation is from the mean.
-- Compute probabilities using the standard normal distribution.
+- Compute **probabilities** using the standard normal distribution.
 - Transform a normal random variable into a **standard normal variable** using standardization.
 - Convert a standard normal value back into the **original measurement scale**.
-- Using Z-score to clarify Significance…
-- Summary of Continuous Distributions
+- Using Z-score to clarify **Significance**…
+- **Summary** of Continuous Distributions
 
 
 
