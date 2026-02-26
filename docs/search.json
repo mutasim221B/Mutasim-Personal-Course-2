@@ -296,51 +296,51 @@
   {
     "objectID": "activities/Unit-06-02-Standard-Normal.html",
     "href": "activities/Unit-06-02-Standard-Normal.html",
-    "title": "Standard Normal Distribution",
+    "title": "Class 12: Standard Normal Distribution",
     "section": "",
     "text": "The rendered version is posted in the course website (Activities tab). I often experiment with the class activities (and see it in live!) and make updates, but I always post the final version before class starts. To be sure you have the most up-to-date copy, please download it once you’ve settled in before class begins.",
     "crumbs": [
-      "Standard Normal Distribution"
+      "Class 12: Standard Normal Distribution"
     ]
   },
   {
     "objectID": "activities/Unit-06-02-Standard-Normal.html#handouts-activities",
     "href": "activities/Unit-06-02-Standard-Normal.html#handouts-activities",
-    "title": "Standard Normal Distribution",
+    "title": "Class 12: Standard Normal Distribution",
     "section": "Handouts & Activities",
     "text": "Handouts & Activities\n\nDownload Class 12 Handoputs\nDownload Normal-Table\nDownload Class 12 Excel and Class 12 Excel Solution",
     "crumbs": [
-      "Standard Normal Distribution"
+      "Class 12: Standard Normal Distribution"
     ]
   },
   {
     "objectID": "activities/Unit-06-02-Standard-Normal.html#practice-problems",
     "href": "activities/Unit-06-02-Standard-Normal.html#practice-problems",
-    "title": "Standard Normal Distribution",
+    "title": "Class 12: Standard Normal Distribution",
     "section": "Practice Problems",
     "text": "Practice Problems\n\nPractice problems are essential for your understanding, practice, and exploration. I have posted the practice problems for Unit 06. Please complete these before attempting the HW.",
     "crumbs": [
-      "Standard Normal Distribution"
+      "Class 12: Standard Normal Distribution"
     ]
   },
   {
     "objectID": "activities/Unit-06-02-Standard-Normal.html#the-normal-distribution-bell-curve",
     "href": "activities/Unit-06-02-Standard-Normal.html#the-normal-distribution-bell-curve",
-    "title": "Standard Normal Distribution",
+    "title": "Class 12: Standard Normal Distribution",
     "section": "The Normal Distribution (Bell Curve)",
     "text": "The Normal Distribution (Bell Curve)\nThe Normal Distribution (often called the bell curve) is one of the most important continuous random variable models.\nIf \\(X\\) is normally distributed, its support is \\((-\\infty, \\infty)\\). The curve is centered at its mean \\(\\mu\\), and its spread depends on the standard deviation \\(\\sigma\\).\n\n\n\n\n\n\n\nMath Box: Normal Distribution\n\n\n\n\n\n\\[\n\\text{If } X \\sim N(\\mu,\\sigma), \\text{ then}\n\\quad\nf(x) \\;=\\; \\frac{1}{\\sqrt{2\\pi}\\,\\sigma}\n\\, e^{-\\frac{1}{2}\\left(\\frac{x-\\mu}{\\sigma}\\right)^2},\n\\qquad -\\infty &lt; x &lt; \\infty .\n\\]\n\n\n\n\nExample 1\n\n\n\nExample 2: Emperical Rule- Giant!\nSuppose heights of adult American men are approximately normally distributed, and you are about to meet a man whose height is \\(10\\sigma\\) (10 standard deviations) above the mean. How tall would you expect this person to be? Someone who is “pretty tall” (maybe 6.5 feet), or a giant (the tallest person who has ever lived)?\nAssume adult American men’s heights are approximately normal with:\n\nMean: \\(\\mu = 70\\) inches\n\nStandard deviation: \\(\\sigma = 4\\) inches\n\nA height that is \\(10\\sigma\\) above the mean is:\n\\[\n\\mu + 10\\sigma\n= 70 + 10(4)\n= 110 \\text{ inches}.\n\\]\nConvert inches to feet/inches:\n\\[\n110 \\text{ inches} = 9 \\text{ ft } 2 \\text{ in}.\n\\]\nInterpretation: A person who is \\(10\\sigma\\) above the mean would be about \\(9'2''\\), which is extremely rare. For context, the tallest man who ever lived was about \\(8'11''\\)!",
     "crumbs": [
-      "Standard Normal Distribution"
+      "Class 12: Standard Normal Distribution"
     ]
   },
   {
     "objectID": "activities/Unit-06-02-Standard-Normal.html#z-score",
     "href": "activities/Unit-06-02-Standard-Normal.html#z-score",
-    "title": "Standard Normal Distribution",
+    "title": "Class 12: Standard Normal Distribution",
     "section": "“Z-score”",
     "text": "“Z-score”\n\nTells us how many standard deviations a value is away from the mean.\nIf a z-score is positive, it is larger than the mean.\nIf a z-score is negative, it is smaller than the mean.\n\n\\[\nZ = \\frac{X - \\mu}{\\sigma}\n\\]",
     "crumbs": [
-      "Standard Normal Distribution"
+      "Class 12: Standard Normal Distribution"
     ]
   },
   {

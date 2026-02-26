@@ -1,5 +1,5 @@
 ---
-title: "Standard Normal Distribution"
+title: "Class 12: Standard Normal Distribution"
 subtitle: "University of Alabama: Class Resources"
 format: 
   html:
